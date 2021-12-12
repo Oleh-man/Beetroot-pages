@@ -1,0 +1,32 @@
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+}
+
+header>div {
+    grid-template-columns: 1fr 2fr;
+}
+
+header ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px 0;
+    text-align: center;
+}
+
+li>a {
+    color: gray;
+    text-decoration: none;
+}
+
+header>div>div {
+    margin: auto;
+}
+
+iframe {
+    border-width: 1px;
+}
