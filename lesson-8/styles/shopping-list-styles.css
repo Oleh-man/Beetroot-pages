@@ -57,21 +57,21 @@ header p {
     color: #FF8984;
 }
 
-ul {
+.item-list {
     margin: auto;
     padding: 20px 130px 0 129px;
 }
 
-li {
+label {
+    display: block;
     font-style: normal;
+    height: 45px;
     line-height: 45px;
-}
-
-li.odd-item {
     background-color: #88839E;
+    transition: 0s;
 }
 
-li.even-item {
+label:nth-of-type(even) {
     background-color: #7A7593;
 }
 
@@ -79,24 +79,35 @@ span {
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
+    padding-left: 3px;
 }
- 
+
 .item-comment {
     font-size: 11px;
     padding-left: 3px;
 }
 
-main>p {
+.item-list>p {
     height: 45px;
     margin: 45px 130px 0 129px;
     background-color: #4A4F56;
 }
 
-main p span {
+.item-list p span {
     display: block;
     text-align: center;
     padding: 12px 0 0 0;
     color: #FF8984;
     font-size: 18px;
     font-weight: 400;
+}
+
+label:visited {
+    text-decoration: line-through;
+}
+
+label:hover {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: #625E77;
 }
