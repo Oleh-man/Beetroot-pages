@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping List</title>
+    <link rel="stylesheet" href="../lesson-1/styles/reset.css">
+    <link rel="stylesheet" href="../lesson-8/styles/shopping-list-styles.css">
+    <link rel="stylesheet" href="../lesson-8/styles/checkbox.css">
 </head>
 <body>
-    <a href="/index.html">HW list</a>
+    <div class="main-container">
+        <header class="centrate">
+            <h1>CSS Dinner Shopping List</h1>
+            <p>Let's go to the mall!</p>
+        </header>
+        <main>
+            <ul>
+                <li class="odd-item"><input type="checkbox" name="item1" id="item1"><span class="item-name">A lot of pickles<span class="item-comment">(for the next lessons about CSS)</span></span></li>
+                <li class="even-item"><input type="checkbox" name="item2" id="item2"><span class="item-name">10 apples<span class="item-comment">(for more CSS manipulations)</span></span></li>
+                <li class="odd-item"><input type="checkbox" name="item3" id="item3"><span class="item-name">20 oranges<span class="item-comment">(because they are awesome)</span></span></li>
+                <li class="even-item"><input type="checkbox" name="item4" id="item4"><span class="item-name">13 plates<span class="item-comment">(hm... they always dissapear)</span></span></li>
+                <li class="odd-item"><input type="checkbox" name="item5" id="item5"><span class="item-name">15 bentos</span class="item-comment"></li>
+                <li class="even-item"><input type="checkbox" name="item6" id="item6"><span class="item-name">1 bottle of Sake<span class="item-comment">(for my friends)</span></span></li>
+            </ul>
+            <p><span>Bon appetit :)</span></p>
+        </main>
+    </div>
+    <a href="/index.html" style="display: block; text-align: center;">HW list</a>
 </body>
 </html>
