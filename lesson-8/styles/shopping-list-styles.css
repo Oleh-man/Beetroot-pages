@@ -75,6 +75,8 @@ label {
 
 label:nth-of-type(even) {
     background-color: #7A7593;
+    border-top: 2px solid #7A7593;
+    border-bottom: 2px solid #7A7593;
 }
 
 span {
