@@ -35,13 +35,13 @@ body {
     align-items: center;  
 }
 
-header {
+.header {
     background-color: #4A4F56;
     height: 82px;
     text-align: center;
 }
 
-header>h1 {
+.header>h1 {
     font-weight: 700;
     font-size: 24px;
     font-style: normal;
@@ -50,7 +50,7 @@ header>h1 {
     padding-top: 19px;
 }
 
-header p {
+.header p {
     padding-top: 4px;
     font-size: 16px;
     font-weight: 400;
@@ -65,10 +65,12 @@ header p {
 label {
     display: block;
     font-style: normal;
-    height: 45px;
-    line-height: 45px;
+    height: 43px;
+    line-height: 43px;
     background-color: #88839E;
     transition: 0s;
+    border-top: 2px solid #88839E;
+    border-bottom: 2px solid #88839E;
 }
 
 label:nth-of-type(even) {
@@ -76,7 +78,6 @@ label:nth-of-type(even) {
 }
 
 span {
-    font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
     padding-left: 3px;
@@ -98,16 +99,19 @@ span {
     text-align: center;
     padding: 12px 0 0 0;
     color: #FF8984;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-label:visited {
-    text-decoration: line-through;
 }
 
 label:hover {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     background-color: #625E77;
+}
+
+label:active {
+    background-color: #FF8984;
+}
+
+input:checked~span {
+     text-decoration: line-through;
+     color: #9B96AC;
 }

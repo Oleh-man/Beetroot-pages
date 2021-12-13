@@ -10,10 +10,10 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:after {
   content: '';
   position: relative;
-  left: 40%;
-  top: 15%;
-  width: 20%;
-  height: 40%;
+  left: 30%;
+  top: 10%;
+  width: 30%;
+  height: 50%;
   border: solid #000000;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
