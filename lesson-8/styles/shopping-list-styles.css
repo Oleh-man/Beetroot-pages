@@ -1,18 +1,4 @@
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto/Roboto-Black.ttf") format("ttf"),
-            url("../fonts/Roboto/Roboto-BlackItalic.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-Blold.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-BloldItalic.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-Italic.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-Light.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-LightItalic.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-Medium.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-MediumItalic.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-Regular.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-Thin.ttf") format("ttf"),
-            url("../fonts\Roboto\Roboto-ThinItalic.ttf") format("ttf");
-   }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
     font-family: "Roboto", sans-serif;
