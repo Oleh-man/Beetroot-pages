@@ -4,16 +4,16 @@
 body {
     font-family: "Roboto";
     font-weight: 400;
-    background-color: #2B81AC;
+    background-color: #3399CC;
     color: #FFFFFF;
+    border-top: 15px solid #2B81AC;
+    border-bottom: 15px solid #2B81AC;
+    border-left: 15px solid #2B81AC;
+    border-right: 15px solid #2B81AC;
 }
 main {
     margin: auto;
     max-width: 540px;
-    border-top: 95px solid #3399CC;
-    border-right: 130px solid #3399CC;
-    border-bottom: 95px solid #3399CC;
-    border-left: 130px solid #3399CC;
 }
 
 ul {
