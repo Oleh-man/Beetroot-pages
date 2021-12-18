@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+    background-color: #3399CC;
+    color: #FFFFFF;
+    border-top: 15px solid #2B81AC;
+    border-bottom: 15px solid #2B81AC;
+    border-left: 15px solid #2B81AC;
+    border-right: 15px solid #2B81AC;
+}
+main {
+    margin: auto;
+    max-width: 540px;
+}
+
+ul {
+    position: relative;
+    font-size: 0;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    font-size: 18px;
+    text-align: center;
+    background-color: tomato;
+    vertical-align: middle;
+}
+
+.first {
+    border: 3px solid white;
+    border-right: 0;
+}
+
+.lisbon {
+    background-color: #3399CC;
+    width: 50%;
+    
+}
+
+.paris {
+    background-color: #33CCCC;
+    width: 25%;
+}
+
+.belgrade {
+    background-color: #996699;
+    width: 25%;
+}
+
+.second {
+    border: 3px solid white;
+    border-top: 0;
+    border-right: 0;
+}
+
+.venice {
+    width: 25%;
+    background-color: #C24747;
+}
+
+.tel-aviv {
+    width: 25%;
+    background-color: #E2674A;
+}
+
+.kyiv {
+    width: 25%;
+    background-color: #FFCC66;
+}
+
+.amsterdam {
+    width: 25%;
+    background-color: #99CC99;
+}
+
+.third {
+    border: 3px solid white;
+    border-top: 0;
+    border-right: 0;
+}
+
+.tokyo {
+    width: 25%;
+    background-color: #669999;
+}
+
+.san-francisco {
+    width: 50%;
+    background-color: #CC6699;
+}
+
+.sydney {
+    width: 25%;
+    background-color: #339966;
+}
+
+.fourth {
+    border: 3px solid white;
+    border-top: 0;
+    border-right: 0;
+}
+
+.new-delhi {
+    width: 100%;
+    background-color: #666699;
+}
+
+.border {
+    height: 100%;
+    border-right: 3px solid white;
+}
+
+.center {
+    display: block;
+    padding-top: 16px;
+}
+
+main:hover {
+    opacity: 0.6;
+}
