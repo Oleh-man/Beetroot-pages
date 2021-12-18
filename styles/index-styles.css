@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'dobroshrift';
+    src: url('../styles/FontOfKindness-Bold.otf') format('opentype');
+    src: url('../styles/FontOfKindness-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'dobroshrift';
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
