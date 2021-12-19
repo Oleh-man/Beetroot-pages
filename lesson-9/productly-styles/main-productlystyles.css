@@ -3,6 +3,9 @@
 body {
     font-family: "Poppins";
     font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
     max-width: 1400px;
     margin: auto;
 }
@@ -114,17 +117,19 @@ section {
 .tools-section {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+}
+
+h2 {
+    color: #2F281E;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
 }
 
 .tools-section h2 {
     display: block;
     text-align: center;
     margin-bottom: 55px;
-    color: #2F281E;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
 }
 
 .card {
@@ -150,11 +155,6 @@ section {
     margin-bottom: 13px;
 }
 
-.card > p {
-    color: #544837;
-    font-size: 16px;
-    line-height: 26px;
-}
 
 .tools-section > button {
     margin: auto;
@@ -170,4 +170,103 @@ section {
     margin-bottom: 90px;
 }
 
+.designer-section div p:nth-child(3n) {
+    margin-bottom: 30px;
+}
 
+.designer-section h2{
+    margin-top: 3px;
+    margin-bottom: 22px;
+}
+
+h4 {
+    color: #2F281E;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.regular-paragraph {
+    margin-bottom: 25px;
+}
+
+.manager-img {
+    width: 535px;
+    margin-right: 100px;
+}
+
+.manager-icon {
+    height: 35px;
+    width: 35px;
+    margin-right: 30px;
+}
+
+.list-item {
+    display: flex;
+}
+
+.list-item p {
+    margin-bottom: 30px;
+}
+
+.manager-section div p:nth-child(3n) {
+    margin-bottom: 30px;
+}
+
+hr {
+    border-color: rgba(188, 208, 229, 0.295);
+}
+
+footer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 102px;
+}
+
+.footer-logo {
+    width: 185px;
+}
+
+.footernav-1 {
+    width: 118px;
+    height: 205px;
+}
+
+.footernav-2 {
+    width: 131px;
+    height: 205px;
+}
+
+input, .footer-btn {
+    display: block;
+
+}
+
+input {
+    width: 325px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 21px;
+}
+
+.footer-btn {
+    width: 131px;
+    height: 39px;
+    background-color: #FF9900;
+    border: 0;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.idk {
+    display: flex;
+}
