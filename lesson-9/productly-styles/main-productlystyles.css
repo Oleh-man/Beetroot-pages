@@ -63,11 +63,6 @@ header {
     margin-bottom: 30px;
 }
 
-section {
-    display: flex;
-    align-items: flex-start;
-}
-
 h1 {
     font-weight: 700;
     font-size: 44px;
@@ -81,9 +76,98 @@ h1 {
     font-size: 18px;
     line-height: 28px;
     color: #544837;
+    margin-bottom: 45px;
 }
 
 .first-section-img {
     width: 605px;
-
 }
+
+.get-started-btn {
+    width: 175px;
+    height: 53px;
+    background-color: #FF9900;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 30px;
+}
+
+.video-link a {
+    color: #FF9900;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.video-link a>img {
+    width: 13px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.tools-section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.tools-section h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 55px;
+    color: #2F281E;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.card {
+    width: 240px;
+}
+
+.tools-icon {
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.card > h3 {
+    color: #2F281E;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 13px;
+}
+
+.card > p {
+    color: #544837;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.tools-section > button {
+    margin: auto;
+    height: 53px;
+    width: 175px;
+    background-color: #FF9900;
+    border: 0;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 90px;
+}
+
+
