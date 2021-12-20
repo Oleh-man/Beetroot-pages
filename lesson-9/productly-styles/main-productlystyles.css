@@ -220,20 +220,14 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 35px;
-    display: flex;
-    justify-content: space-between;
     padding-top: 102px;
 }
 
 .footer-logo {
-    align-self: flex-start;
-
-
     width: 185px;
 }
 
 .footernav-1 {
-    position: relative;
     width: 118px;
 }
 
@@ -271,6 +265,8 @@ input {
 
 .idk {
     display: flex;
+    justify-content: flex-end;
+
 }
 
 .down {
