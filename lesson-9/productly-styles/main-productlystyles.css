@@ -14,10 +14,27 @@ body {
     margin: 20px 145px 80px 145px;
 }
 
-.flexed {
+/* .flexed {
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 30px;
+}
+
+.header-controls {
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+}
+
+.header-nav-links {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 56px;
 }
 
 .header-btn {
@@ -36,7 +53,6 @@ body {
 }
 
 .header-sign-in-btn {
-    margin-left: 65px;
     width: 102px;
     border: 1px solid #BCD0E5;
     background-color: #FFFFFF;
@@ -58,12 +74,29 @@ img {
     width: 100%;
 }
 
+.img-container {
+    max-width: 600px;
+}
+
 .header-logo {
     width: 185px;
 }
 
-header {
-    margin-bottom: 30px;
+.grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.superpowers-btns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 175px);
+    gap: 30px;
+}
+
+.video-link {
+    margin: auto;
 }
 
 h1 {
@@ -83,7 +116,7 @@ h1 {
 }
 
 .first-section-img {
-    width: 605px;
+    max-width: 605px;
 }
 
 .get-started-btn {
@@ -132,19 +165,16 @@ h2 {
     margin-bottom: 55px;
 }
 
-.card {
-    width: 240px;
-}
-
 .tools-icon {
     width: 50px;
     margin-bottom: 30px;
 }
 
 .card-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    gap: 45px;
+    justify-content: center;
 }
 
 .card > h3 {
@@ -156,7 +186,7 @@ h2 {
 }
 
 
-.tools-section > button {
+.tools-btn {
     margin: auto;
     height: 53px;
     width: 175px;
@@ -167,6 +197,7 @@ h2 {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
+    margin-top: 60px;
     margin-bottom: 90px;
 }
 
@@ -190,7 +221,6 @@ h4 {
 }
 
 .manager-img {
-    width: 535px;
     margin-right: 100px;
 }
 
@@ -224,17 +254,17 @@ footer {
 }
 
 .footer-logo {
-    width: 185px;
+    max-width: 185px;
 }
 
-.footernav-1 {
+/* .footernav-1 {
     width: 118px;
 }
 
 .footernav-2 {
     margin: 0 82px 0 130px;
     width: 131px;
-}
+} */
 
 input, .footer-btn {
     display: block;
@@ -264,11 +294,16 @@ input {
 }
 
 .idk {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    
+    /* display: flex;
+    justify-content: flex-end; */
 
 }
 
 .down {
-    align-self: flex-end;
+    
+
+    /* align-self: flex-end; */
 }
