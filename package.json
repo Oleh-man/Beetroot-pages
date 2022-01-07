@@ -1,0 +1,19 @@
+{
+  "name": "sass-for-shade",
+  "version": "1.0.0",
+  "description": "learning sass",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleh-man/Beetroot-pages.git"
+  },
+  "author": "Oleh Mamalyha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oleh-man/Beetroot-pages/issues"
+  },
+  "homepage": "https://github.com/Oleh-man/Beetroot-pages#readme"
+}
