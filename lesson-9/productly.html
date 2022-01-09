@@ -10,13 +10,13 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="flexed">
+        <header class="header">
             <div class="header-logo">
                 <img src="images/logo.png" alt="logo">
             </div>
-            <div class="flexed">
+            <div class="header-controls">
                 <nav class="navigation">
-                    <ul class="flexed">
+                    <ul class="header-nav-links">
                         <li><a href="#">Product</a></li>
                         <li><a href="#">Customers</a></li>
                         <li><a href="#">Pricng</a></li>
@@ -28,19 +28,18 @@
             </div>
         </header>
         <main>
-            <section class="superpowers-section flexed">
+            <section class="superpowers-section grid-two">
                 <div>
-                    <h1>The Design Thinking<br>
-                        superpowers</h1>
-                    <p class="superpowers-paragraph">Tools, tutorials, design and innovation experts, all<br>
-                        in one place! The most intuitive way to imagine<br>
-                        your next user experience.
+                    <h1>The Design Thinking superpowers</h1>
+                    <p class="superpowers-paragraph">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
                     </p>
                     <div class="superpowers-btns">
-                        <button class="get-started-btn">Get started</button>
-                        <span class="video-link">
+                        <div>
+                            <button class="get-started-btn">Get started</button>
+                        </div>
+                        <div class="video-link">
                             <a href="#"><img src="icons/triangle-right.png" alt="Orange triangle"> Watch the Video</a>
-                        </span>
+                        </div>
                     </div>
                 </div>
                 <div class="first-section-img">
@@ -48,8 +47,7 @@
                 </div>
             </section>
             <section class="tools-section">
-                <h2>We design tools to unveil<br>
-                    your superpowers</h2>
+                <h2>We design tools to unveil your superpowers</h2>
                 <div class="card-container">
                     <div class="card">
                         <div class="tools-icon">
@@ -63,7 +61,7 @@
                             <img src="icons/wave-icon.png" alt="arrow-icon">
                         </div>
                         <h3>Design surveys</h3>
-                        <p>Sports betting, lottery and<br>bingo playing for the fun.</p>
+                        <p>Sports betting, lottery and bingo playing for the fun.</p>
                     </div>
                     <div class="card">
                         <div class="tools-icon">
@@ -77,12 +75,12 @@
                             <img src="icons/time-icon.png" alt="arrow-icon">
                         </div>
                         <h3>Five second tests</h3>
-                        <p>Personal choices and the<br>overall personality of the<br>person.</p>
+                        <p>Personal choices and the overall personality of the person.</p>
                     </div>
                 </div>
-                <button>SIGN UP NOW</button>
+                    <button class="tools-btn">SIGN UP NOW</button>
             </section>
-            <section class="designer-section flexed">
+            <section class="designer-section grid-two">
                 <div>
                     <p class="main-paragraph">Effortless Validation for</p>
                     <h2>Design Professionals</h2>
@@ -102,7 +100,7 @@
                     <img src="images/designer.png" alt="Designer reads messages">
                 </div>
             </section>
-            <section class="manager-section flexed">
+            <section class="manager-section grid-two">
                 <div class="manager-img">
                     <img src="images/manager.png" alt="Manager with laptop">
                 </div>
@@ -134,7 +132,7 @@
                     </div>
                 </div>
             </section>
-            <section class="designer-section flexed">
+            <section class="designer-section grid-two">
                 <div>
                     <p class="main-paragraph">Optimisation for</p>
                     <h2>Marketers</h2>
@@ -184,13 +182,15 @@
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </nav>
-                <form class="down" action="#">
-                    <input type="email" name="email" id="#">
-                    <button class="footer-btn">Sign up Now</button>
-                </form>
+                <div class="form">
+                    <form class="down" action="#">
+                        <input type="email" name="email" id="#">
+                        <button class="footer-btn">Sign up Now</button>
+                    </form>
+                </div>
             </div>
         </footer>
     </div>
-    <a href="../index.html" style="display: block; font-size:30px;text-align: center; color: black;">HW list</a>
+    <a href="../index.html" style="display: block; font-size:30px;text-align: center; color: black;">Back to HW list</a>
 </body>
 </html>
