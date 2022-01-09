@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,44 +49,64 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.wrapper {
+  margin: 45px 270px 0px 270px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .controls {
+  display: flex;
+  justify-content: space-between;
+}
+
 .innovative-icon {
-  background: url("../../img/sprite-icons.svg") no-repeat 0 0;
+  background: url("../img/sprite-icons.svg") no-repeat 0 0;
   width: 54px;
   height: 54px;
 }
 
 .proactive-icon {
-  background: url("../../img/sprite-icons.svg") no-repeat -62px -4px;
+  background: url("../img/sprite-icons.svg") no-repeat -62px -4px;
   width: 32px;
   height: 46px;
 }
 
 .interactive-icon {
-  background: url("../../img/sprite-icons.svg") no-repeat -102px -3px;
+  background: url("../img/sprite-icons.svg") no-repeat -102px -3px;
   width: 54px;
   height: 48px;
 }
 
 .plug-and-pay-icon {
-  background: url("../../img/sprite-icons.svg") no-repeat -164px 0;
+  background: url("../img/sprite-icons.svg") no-repeat -164px 0;
   width: 39px;
   height: 51px;
 }
 
 .cross-platform-icon {
-  background: url("../../img/sprite-icons.svg") no-repeat -211px -4px;
+  background: url("../img/sprite-icons.svg") no-repeat -211px -4px;
   width: 44px;
   height: 47px;
 }
 
 .efficient-icon {
-  background: url("../../img/sprite-icons.svg") no-repeat -263px -7px;
+  background: url("../img/sprite-icons.svg") no-repeat -263px -7px;
   width: 54px;
   height: 41px;
 }
 
 .scalble-icon {
-  background: url("../../img/sprite-icons.svg") no-repeat -325px -1px;
+  background: url("../img/sprite-icons.svg") no-repeat -325px -1px;
   width: 39px;
   height: 51px;
 }
