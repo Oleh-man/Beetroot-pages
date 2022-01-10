@@ -54,59 +54,72 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  color: #000000;
 }
 
 .wrapper {
   margin: 45px 270px 0px 270px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
+.header__logo {
+  max-width: 130px;
 }
-.header .controls {
+.header__logo img {
+  width: 100%;
+}
+
+.header, .controls, .nav-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list__item {
+  margin: 0 34px 0 34px;
+}
+.nav-list__item a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .innovative-icon {
-  background: url("../img/sprite-icons.svg") no-repeat 0 0;
+  background: url("../../img/sprite-icons.svg") no-repeat 0 0;
   width: 54px;
   height: 54px;
 }
 
 .proactive-icon {
-  background: url("../img/sprite-icons.svg") no-repeat -62px -4px;
+  background: url("../../img/sprite-icons.svg") no-repeat -62px -4px;
   width: 32px;
   height: 46px;
 }
 
 .interactive-icon {
-  background: url("../img/sprite-icons.svg") no-repeat -102px -3px;
+  background: url("../../img/sprite-icons.svg") no-repeat -102px -3px;
   width: 54px;
   height: 48px;
 }
 
 .plug-and-pay-icon {
-  background: url("../img/sprite-icons.svg") no-repeat -164px 0;
+  background: url("../../img/sprite-icons.svg") no-repeat -164px 0;
   width: 39px;
   height: 51px;
 }
 
 .cross-platform-icon {
-  background: url("../img/sprite-icons.svg") no-repeat -211px -4px;
+  background: url("../../img/sprite-icons.svg") no-repeat -211px -4px;
   width: 44px;
   height: 47px;
 }
 
 .efficient-icon {
-  background: url("../img/sprite-icons.svg") no-repeat -263px -7px;
+  background: url("../../img/sprite-icons.svg") no-repeat -263px -7px;
   width: 54px;
   height: 41px;
 }
 
 .scalble-icon {
-  background: url("../img/sprite-icons.svg") no-repeat -325px -1px;
+  background: url("../../img/sprite-icons.svg") no-repeat -325px -1px;
   width: 39px;
   height: 51px;
 }

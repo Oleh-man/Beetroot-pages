@@ -1,8 +1,31 @@
-.header {
+.header__logo {
+    max-width: 130px;
+    img {
+        width: 100%
+    }
+
+}
+
+
+
+.header, .controls, .nav-list {
     @include flex-between;
 
-    .controls {
-    @include flex-between;
-    
+}
+
+.nav-list__item {
+    margin: 0 34px 0 34px;
+    a {
+        color: $title-color;
+        text-decoration: none;
     }
 }
+
+.header__btn {
+
+    .header__btn--share {
+        
+    }
+    
+}
+
