@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,19 +49,42 @@ table {
   border-spacing: 0;
 }
 
-.innovative-icon {
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.wrapper {
+  position: relative;
+  padding: 45px 15% 0px 15%;
+  max-width: 1440px;
+}
+
+img {
+  width: 100%;
+}
+
+.card__icon {
+  width: 100%;
+  margin: auto;
+}
+
+.interactive-icon {
   background: url("../../img/sprite-icons.svg") no-repeat 0 0;
   width: 54px;
   height: 54px;
 }
 
-.proactive-icon {
+.innovative-icon {
   background: url("../../img/sprite-icons.svg") no-repeat -62px -4px;
   width: 32px;
   height: 46px;
 }
 
-.interactive-icon {
+.proactive-icon {
   background: url("../../img/sprite-icons.svg") no-repeat -102px -3px;
   width: 54px;
   height: 48px;
@@ -88,6 +112,130 @@ table {
   background: url("../../img/sprite-icons.svg") no-repeat -325px -1px;
   width: 39px;
   height: 51px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 170px;
+}
+.header .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  min-width: 130px;
+}
+.header__logo img {
+  width: 100%;
+}
+
+.nav-list__item {
+  margin: 0 34px 0 34px;
+}
+.nav-list__item a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__btn {
+  margin-left: 106px;
+}
+.header__btn .header__btn--share {
+  border-width: 0;
+  background-color: #000000;
+  width: 78px;
+  height: 40px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.banner-section {
+  position: relative;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 72px;
+  margin-bottom: 400px;
+}
+h1 span {
+  font-size: 48px;
+  line-height: 48px;
+  color: #828282;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.692);
+  border-radius: 10px;
+  width: 225px;
+}
+.card .card-container {
+  height: 55px;
+  width: 55px;
+  margin-bottom: 20px;
+}
+.card h3 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.card p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #4F4F4F;
+}
+
+.banner-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 300px;
+}
+.banner-cards .card p {
+  font-size: 16px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cards .card:first-child {
+  margin-right: 50px;
+}
+
+.banner-circle {
+  width: 944px;
+  position: absolute;
+  top: 260px;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */

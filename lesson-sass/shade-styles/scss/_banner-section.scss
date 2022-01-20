@@ -1,0 +1,58 @@
+.banner-section {
+    position: relative;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 72px;
+    margin-bottom: 400px;
+
+    span {
+        font-size: 48px;
+        line-height: 48px;
+        color: #828282;
+    }
+}
+
+.card {
+    @include card;
+    width: 225px;
+    .card-container {
+        height: 55px;
+        width: 55px;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        @include card-name;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        text-align: center;
+        @include card-description;
+        
+    }
+}
+
+.banner-cards {
+    .card p {
+        font-size: 16px;
+    }
+    
+    @include flex-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.cards {
+    @include flex-between;
+    justify-content: flex-start;
+    
+    & .card:first-child {
+        margin-right: 50px
+    }
+}
+

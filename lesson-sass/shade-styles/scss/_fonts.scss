@@ -1,0 +1,23 @@
+// @font-face {
+//     font-family: "Inter";
+//     src: url("../../fonts/Inter-Black.ttf") format("opentype"),
+//          url("../../fonts/Inter-Bold.ttf") format("opentype"),
+//          url("../../fonts/Inter-ExtraBold.ttf") format("opentype"),
+//          url("../../fonts/Inter-ExtraLight.ttf") format("opentype"),
+//          url("../../fonts/Inter-Light.ttf") format("opentype"),
+//          url("../../fonts/Inter-Medium.ttf") format("opentype"),
+//          url("../../fonts/Inter-Regular.ttf") format("opentype"),
+//          url("../../fonts/Inter-SemiBold.ttf") format("opentype"),
+//          url("../../fonts/Inter-Thin.ttf") format("opentype");
+//   }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  body {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $title-color;
+  }
+
