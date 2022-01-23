@@ -1,0 +1,39 @@
+.btn-container {
+    position: relative;
+}
+
+.banner-section__btn {
+    margin-left: 64px;
+}
+
+.btn__underline {
+    position: absolute;
+    background-color: $btn-color;
+    opacity: 0.3;
+    height: 13px;
+    width: 109px;
+    top: 50%;
+    left: 11px;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: $btn-color;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.contact-btn__underline {
+    width: 185px;
+    left: 11px;
+}
+
+.request-btn__underline {
+    width: 170px;
+    left: 13px;
+}

@@ -1,0 +1,75 @@
+.invest-section {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.invest__img {
+    position: relative;
+    margin-left: 64px;
+    width: 566px;
+    height: 680px;
+}
+
+.invest__info {
+    position: absolute;
+    right: 64px;
+    top: 55px;
+    display: flex;
+    justify-content: space-between;
+    width: 761px;
+    height: 570px;
+    background-color: rgba($bg-color, 0.9);
+}
+
+.invest__amounts {
+    margin: 42px 0 42px 1px;
+    width: 371px;
+    height: 486px;
+    text-align: center;
+
+
+    .amount__description {
+        margin-bottom: 50px;
+    }
+
+    hr {
+        margin: 0 144px;
+        
+    }
+
+    .amount__second-item {
+        margin-top: 41px;
+    }
+}
+
+.amount__money {
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 72px;
+    margin-bottom: 12px;
+
+    span {
+        font-size: 40px;
+        line-height: 40px;
+        color: #c5c5c5;
+    }
+}
+
+
+
+
+
+.invest__text {
+    & p:first-child {
+        margin-bottom: 26px;
+    }
+    margin: 54px 11px 0 0;
+    width: 360px;
+    height: 334px;
+
+    & p:nth-child(2) {
+        margin-bottom: 52px;
+    }
+}
