@@ -64,13 +64,13 @@ body {
   margin: auto;
 }
 
-.banner--blur {
+.background-image__container {
   top: -30px;
   position: absolute;
   z-index: -1;
 }
 
-.blur222 {
+.blur {
   position: absolute;
   bottom: 0;
   height: 100%;
@@ -85,7 +85,7 @@ img {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 64px 24px 64px;
+  padding: 24px 5% 24px 5%;
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(5px);
   align-items: center;
@@ -94,6 +94,14 @@ img {
 .header nav {
   flex: 1;
 }
+.header__logo img {
+  height: 32px;
+  width: auto;
+}
+.header__theme-container img {
+  width: 25px;
+  height: 25px;
+}
 
 .header__navigation ul {
   display: flex;
@@ -101,7 +109,7 @@ img {
   justify-content: flex-end;
 }
 .header__navigation ul .navigation__item {
-  margin-right: 32px;
+  margin-right: 2.5%;
 }
 .header__navigation ul a {
   text-decoration: none;
@@ -126,8 +134,8 @@ img {
   font-weight: 400;
   font-size: 44px;
   line-height: 52px;
-  width: 566px;
-  padding-left: 64px;
+  width: 44.2%;
+  padding-left: 5%;
   margin-bottom: 24px;
 }
 .banner-section__title span {
@@ -137,7 +145,7 @@ img {
 
 .banner-section__paragraph {
   opacity: 0.8;
-  padding-left: 64px;
+  padding-left: 5%;
   width: 465px;
   margin-bottom: 48px;
 }
@@ -194,14 +202,14 @@ img {
 
 .invest__img {
   position: relative;
-  margin-left: 64px;
+  margin-left: 5%;
   width: 566px;
   height: 680px;
 }
 
 .invest__info {
   position: absolute;
-  right: 64px;
+  right: 5%;
   top: 55px;
   display: flex;
   justify-content: space-between;
@@ -262,7 +270,7 @@ img {
   grid-template-columns: 1fr 1fr;
   column-gap: 86px;
   row-gap: 136px;
-  margin: 140px 97px;
+  margin: 140px 7.5%;
 }
 .services-section hr {
   margin: 0 0 32px 0;
@@ -286,14 +294,14 @@ img {
 
 .main-quote {
   position: relative;
-  width: 1152px;
+  max-width: 1152px;
   height: 400px;
-  margin: 0 64px 121px 64px;
+  margin: 0 5% 121px 5%;
+  padding: 101px 0 0 129px;
   background-image: url(../images/quote-background.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
-  border: 1px solid #191C29;
 }
 
 .quote__img {
@@ -305,9 +313,8 @@ img {
 }
 
 .quote__container {
-  width: 751px;
+  max-width: 751px;
   height: 198px;
-  margin: 101px 0 0 129px;
 }
 .quote__container blockquote {
   font-family: Lato;

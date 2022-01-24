@@ -1,13 +1,14 @@
 .main-quote {
     position: relative;
-    width: 1152px;
+    max-width: 1152px;
     height: 400px;
-    margin: 0 64px 121px 64px;
+    margin: 0 5% 121px 5%;
+    padding: 101px 0  0 129px;
     background-image: url(../images/quote-background.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-    border: 1px solid #191C29;
+    // border-top: 1px solid #191C29;
 
     
 }
@@ -20,9 +21,9 @@
     left: 70px;
 }
 .quote__container {
-    width: 751px;
+    max-width: 751px;
     height: 198px;
-    margin: 101px 0  0 129px;
+    // margin: 101px 0  0 129px;
     
     blockquote {
         font-family: Lato;
