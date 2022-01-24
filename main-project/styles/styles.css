@@ -57,23 +57,25 @@ body {
   color: #262A3F;
 }
 
-.page-container {
-  background-color: #FFFFFF;
+.wrapper {
+  position: relative;
   max-width: 1280px;
-  background-image: url(../images/background-image.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
   padding-top: 30px;
   margin: auto;
 }
 
 .banner--blur {
+  top: -30px;
   position: absolute;
-  top: 750px;
-  height: 170px;
+  z-index: -1;
+}
+
+.blur222 {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
   width: 100%;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), white);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 80%, white 100%);
 }
 
 img {
@@ -134,6 +136,7 @@ img {
 }
 
 .banner-section__paragraph {
+  opacity: 0.8;
   padding-left: 64px;
   width: 465px;
   margin-bottom: 48px;
@@ -215,9 +218,12 @@ img {
 }
 .invest__amounts .amount__description {
   margin-bottom: 50px;
+  opacity: 0.8;
 }
 .invest__amounts hr {
   margin: 0 144px;
+  border: 0;
+  border-top: 1px solid #85BBB1;
 }
 .invest__amounts .amount__second-item {
   margin-top: 41px;
@@ -241,11 +247,85 @@ img {
   width: 360px;
   height: 334px;
 }
+.invest__text p {
+  opacity: 0.8;
+}
 .invest__text p:first-child {
   margin-bottom: 26px;
 }
 .invest__text p:nth-child(2) {
   margin-bottom: 52px;
+}
+
+.services-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 86px;
+  row-gap: 136px;
+  margin: 140px 97px;
+}
+.services-section hr {
+  margin: 0 0 32px 0;
+  border: 0;
+  border-top: 1px solid #E4E4E4;
+}
+.services-section h3 {
+  font-family: Playfair Display;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.services-section h3 span {
+  color: #85BBB1;
+  font-style: italic;
+}
+.services-section p {
+  opacity: 0.8;
+}
+
+.main-quote {
+  position: relative;
+  width: 1152px;
+  height: 400px;
+  margin: 0 64px 121px 64px;
+  background-image: url(../images/quote-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border: 1px solid #191C29;
+}
+
+.quote__img {
+  position: absolute;
+  width: 100px;
+  height: 81px;
+  top: 70px;
+  left: 70px;
+}
+
+.quote__container {
+  width: 751px;
+  height: 198px;
+  margin: 101px 0 0 129px;
+}
+.quote__container blockquote {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.quote__container p {
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=styles.css.map */

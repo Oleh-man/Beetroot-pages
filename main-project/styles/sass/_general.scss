@@ -5,25 +5,25 @@ body {
     line-height: 26px;
     color: $primary-color;
 }
-
-.page-container {
-    background-color: $bg-color;
+.wrapper {
+    position: relative;
     max-width: 1280px;
-    background-image: url(../images/background-image.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
     padding-top: 30px;
     margin: auto;
-    
 }
 
 .banner--blur {
+    top: -30px;
     position: absolute;
-    top: 750px;
-    height: 170px;
+    z-index: -1;
+}
+
+.blur222 {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), white);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 80% , white 100%);
 }
 
 img {

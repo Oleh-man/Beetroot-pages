@@ -1,0 +1,46 @@
+.main-quote {
+    position: relative;
+    width: 1152px;
+    height: 400px;
+    margin: 0 64px 121px 64px;
+    background-image: url(../images/quote-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 1px solid #191C29;
+
+    
+}
+
+.quote__img {
+    position: absolute;
+    width: 100px;
+    height: 81px;
+    top: 70px;
+    left: 70px;
+}
+.quote__container {
+    width: 751px;
+    height: 198px;
+    margin: 101px 0  0 129px;
+    
+    blockquote {
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-family: Playfair Display;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        color: #FFFFFF;
+    }
+}

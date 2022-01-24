@@ -28,14 +28,15 @@
     height: 486px;
     text-align: center;
 
-
     .amount__description {
         margin-bottom: 50px;
+        opacity: 0.8;
     }
 
     hr {
         margin: 0 144px;
-        
+        border: 0;
+        border-top: 1px solid $title-color;
     }
 
     .amount__second-item {
@@ -57,17 +58,19 @@
     }
 }
 
-
-
-
-
 .invest__text {
-    & p:first-child {
-        margin-bottom: 26px;
-    }
     margin: 54px 11px 0 0;
     width: 360px;
     height: 334px;
+
+    p {
+        opacity: 0.8;
+    }
+
+    & p:first-child {
+        margin-bottom: 26px;
+    }
+    
 
     & p:nth-child(2) {
         margin-bottom: 52px;
