@@ -8,8 +8,7 @@
     margin-bottom: 24px;
 
     & span {
-        font-style: italic;
-        color: $title-color;
+        @include italic-span;
     }
 }
 

@@ -139,8 +139,8 @@ img {
   margin-bottom: 24px;
 }
 .banner-section__title span {
-  font-style: italic;
   color: #85BBB1;
+  font-style: italic;
 }
 
 .banner-section__paragraph {
@@ -294,14 +294,17 @@ img {
 
 .main-quote {
   position: relative;
-  max-width: 1152px;
-  height: 400px;
-  margin: 0 5% 121px 5%;
-  padding: 101px 0 0 129px;
-  background-image: url(../images/quote-background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
+  max-width: 90%;
+  margin: 0 5% 222px 5%;
+  padding: 101px 0 0 11%;
+}
+
+.quote__background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
 }
 
 .quote__img {
@@ -309,7 +312,7 @@ img {
   width: 100px;
   height: 81px;
   top: 70px;
-  left: 70px;
+  left: 6%;
 }
 
 .quote__container {
@@ -333,6 +336,103 @@ img {
   line-height: 20px;
   letter-spacing: 0.08em;
   color: #FFFFFF;
+}
+
+.video__container {
+  position: relative;
+  border: 1px solid #e4e4e4;
+  border-radius: 32px;
+  margin: 0 188px 55px 188px;
+}
+.video__container iframe {
+  width: 812px;
+  height: 502px;
+  margin: 25px 60px 20px 28px;
+  border: 1px solid black;
+  border-top: 0;
+}
+.video__container .video__not-camera {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 270px;
+  left: 8px;
+  border: 1px solid #E4E4E4;
+  box-sizing: border-box;
+  border-radius: 32px;
+  z-index: -1;
+}
+.video__container .video__not-btn {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 260px;
+  right: 14px;
+  border: 1px solid #E4E4E4;
+  border-radius: 32px;
+  z-index: -1;
+}
+
+.video-section {
+  margin-bottom: 120px;
+}
+.video-section h2 {
+  font-family: Playfair Display;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  margin: 0 0 20px 192px;
+}
+.video-section h2 span {
+  color: #85BBB1;
+  font-style: italic;
+}
+.video-section p {
+  width: 70%;
+  margin-left: 192px;
+}
+
+.main-app {
+  display: flex;
+}
+.main-app__container {
+  position: relative;
+  background-image: url(../images/app-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 566px;
+  height: 540px;
+  border: 1px solid white;
+}
+.main-app__self {
+  background-color: #161926;
+  border-radius: 12px;
+  width: 240px;
+  height: 331px;
+  margin-top: 104px;
+  margin-left: 60px;
+  padding: 25px 20px 13px 20px;
+  color: white;
+}
+.main-app__coin-select {
+  display: flex;
+  align-items: center;
+}
+.main-app .bit-coin {
+  width: 18px;
+  height: 18px;
+  margin: 0 12px 0 6px;
+}
+.main-app .right-arrow {
+  width: 16px;
+  height: 16px;
+  margin-right: 13px;
+}
+.main-app .tether-coin {
+  width: 18px;
+  height: 18px;
+  margin: 0 0 0 6px;
 }
 
 /*# sourceMappingURL=styles.css.map */

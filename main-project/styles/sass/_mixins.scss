@@ -2,3 +2,20 @@
     display: flex;
     justify-content: space-between;
 }
+
+@mixin semi-title {
+    font-family: Playfair Display;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+@mixin italic-span {
+    color: $title-color;
+    font-style: italic;
+}
+
+@mixin card-icons-size {
+    width: 18px;
+    height: 18px;
+}

@@ -1,0 +1,55 @@
+.video__container {
+    position: relative;
+    border: 1px solid #e4e4e4;
+    border-radius: 32px;
+    margin: 0 188px 55px 188px;
+
+    iframe {
+        width: 812px;
+        height: 502px;
+        margin: 25px 60px 20px 28px;
+        border: 1px solid black;
+        border-top: 0;
+    }
+
+    .video__not-camera {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        top: 270px;
+        left: 8px;
+        border: 1px solid #E4E4E4;
+        box-sizing: border-box;
+        border-radius: 32px;
+        z-index: -1;
+    }
+
+    .video__not-btn {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 260px;
+        right: 14px;
+        border: 1px solid #E4E4E4;
+        border-radius: 32px;
+        z-index: -1;
+    }
+}
+
+.video-section {
+    margin-bottom: 120px;
+
+    & h2 {
+        @include semi-title;
+        margin: 0 0 20px 192px;
+
+        span {
+            @include italic-span;
+        }
+    }
+
+    p {
+        width: 70%;
+        margin-left: 192px;
+    }
+}

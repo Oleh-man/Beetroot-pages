@@ -12,15 +12,11 @@
     }
 
     h3 {
-        font-family: Playfair Display;
-        font-size: 40px;
-        line-height: 48px;
-        font-weight: 400;
+        @include semi-title;
         margin-bottom: 24px;
 
         span {
-            color: $title-color;
-            font-style: italic;
+            @include italic-span;
         }
     }
 
