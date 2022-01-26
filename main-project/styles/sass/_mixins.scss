@@ -19,3 +19,9 @@
     width: 18px;
     height: 18px;
 }
+
+@mixin app-text {
+    font-size: 12px;
+    line-height: 24px;
+    opacity: 0.3;
+}

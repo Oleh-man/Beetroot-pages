@@ -15,19 +15,33 @@
 
     // CARD
     &__self {
+        position: relative;
         background-color: #161926;
         border-radius: 12px;
-        width: 240px;
-        height: 331px;
-        margin-top: 104px;
-        margin-left: 60px;
-        padding: 25px 20px 13px 20px;
+        width: 200px;
+        margin: 104px 250px 105px 76px;
+        padding: 20px 21px 12px 19px;
         color: white;
+        
+        
+    }
+    
+    hr {
+        &:nth-child(4) {
+            margin-top: 46px;
+        }
+        
+        margin: 16px 0 10px 0;
+        border: 1px solid #FFFFFF ;
+        opacity: 0.1;
+        
     }
 
     &__coin-select {
         display: flex;
         align-items: center;
+        font-size: 14px;
+        line-height: 24px;
     }
 
     & .bit-coin {
@@ -46,6 +60,71 @@
         margin: 0 0 0 6px;
         
     }
+
+    .app-main-text {
+        @include app-text;
+    }
+
+    .rate__num {
+        position: absolute;
+        left: 29px;
+        font-size: 20px;
+        line-height: 24px;
+            
+        &--integer {
+            display: inline;
+            font-style: italic;
+            opacity: 0.7;
+        }
+
+        &--float {
+            display: inline;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 24px;
+            margin-left: 6px;
+            opacity: 0.9;
+            
+        };
+    }
+    
+    &__exchange {
+        @include flex-between;
+        margin-bottom: 18px;
+    }
+}
+
+.exchange__item {
+    
+}
+
+.exchange__count {
+    @include flex-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 5px 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    width: 79px;
+    border-radius: 4px
+}
+
+.exchange__coin {
+    @include card-icons-size;
+}
+
+.fees__item {
+    @include flex-between;
+    align-items: center;
+    
+}
+
+.fees__input {
+    width: 51px;
+    height: 17px;
+    background: #FFFFFF;
+    opacity: 0.06;
+    border-radius: 4px;
 }
 
 

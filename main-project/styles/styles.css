@@ -406,18 +406,27 @@ img {
   border: 1px solid white;
 }
 .main-app__self {
+  position: relative;
   background-color: #161926;
   border-radius: 12px;
-  width: 240px;
-  height: 331px;
-  margin-top: 104px;
-  margin-left: 60px;
-  padding: 25px 20px 13px 20px;
+  width: 200px;
+  margin: 104px 250px 105px 76px;
+  padding: 20px 21px 12px 19px;
   color: white;
+}
+.main-app hr {
+  margin: 16px 0 10px 0;
+  border: 1px solid #FFFFFF;
+  opacity: 0.1;
+}
+.main-app hr:nth-child(4) {
+  margin-top: 46px;
 }
 .main-app__coin-select {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  line-height: 24px;
 }
 .main-app .bit-coin {
   width: 18px;
@@ -433,6 +442,66 @@ img {
   width: 18px;
   height: 18px;
   margin: 0 0 0 6px;
+}
+.main-app .app-main-text {
+  font-size: 12px;
+  line-height: 24px;
+  opacity: 0.3;
+}
+.main-app .rate__num {
+  position: absolute;
+  left: 29px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main-app .rate__num--integer {
+  display: inline;
+  font-style: italic;
+  opacity: 0.7;
+}
+.main-app .rate__num--float {
+  display: inline;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 24px;
+  margin-left: 6px;
+  opacity: 0.9;
+}
+.main-app__exchange {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.exchange__count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 5px 0 10px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 79px;
+  border-radius: 4px;
+}
+
+.exchange__coin {
+  width: 18px;
+  height: 18px;
+}
+
+.fees__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fees__input {
+  width: 51px;
+  height: 17px;
+  background: #FFFFFF;
+  opacity: 0.06;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=styles.css.map */
