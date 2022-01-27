@@ -36,3 +36,9 @@ h2 {
         @include italic-span;
     }
 }
+
+main > hr {
+    margin: 0px 5% 120px 5% ;
+    opacity: 0.1;
+
+}

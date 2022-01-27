@@ -209,18 +209,42 @@
                 <div class="clients__title">
                     <h2>Client <span>reviews</span></h2>
                     <p>Happy clients, happy us. Read our client reviews about the work process and results.</p>
+                    
                 </div>
-<!-- CAROUSEL -->
-                <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <!-- CAROUSEL -->
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="..." class="d-block w-100">
+                            <div class="client-quote client-quote--first">
+                                <blockquote>
+                                    <p>Solis did a great job. Whether providing direct development support or giving us the opportunity to make our development updates, Solis's web design expertise and support services were top notch! It didn't take long to stand up our website, and we were pleased with the design and layout of the graphics and information. </p>
+                                </blockquote>
+                                <p class="client-quote--author">Dr. Jamika Burge</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="client-quote client-quote--second">
+                                <blockquote>
+                                    <p>Solis is a cutting edge company and knows the importance of excellence. Having been in business for 21 years, I know when I`ve found a competent professional and more importantly a company with integrity. I highly recommend this company and am available for further reference if needed.</p>
+                                </blockquote>
+                                <p class="client-quote--author">Evie-Rose Prosse</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="client-quote client-quote--third">
+                                <blockquote>
+                                    <p>I can`t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is a developer and can build a site from scratch. She understands functionality and is great at constructing a site that is robust and fully functioning. </p>
+                                </blockquote>
+                                <p class="client-quote--author">Elvis Mooney</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="client-quote client-quote--fourth">
+                                <blockquote>
+                                    <p>Solis Solutions was referred to me by a trustworthy friend.  After reviewing his website, I decided to give Solis company Solutions a try.  I am happy to say I was not disappointed! From the onset, I knew PWDS was a team I could work with.  I worked with Toinette, who listened to my desires and offered professional advice and expertise. </p>
+                                </blockquote>
+                                <p class="client-quote--author">Taha Mccartney</p>
+                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -231,49 +255,24 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div> -->
-<!-- CAROUSEL -->
-
-                <div class="client-quote client-quote--first">
-                    <blockquote>
-                        <p>Solis did a great job. Whether providing direct development support or giving us the opportunity to make our development updates, Solis's web design expertise and support services were top notch! It didn't take long to stand up our website, and we were pleased with the design and layout of the graphics and information. </p>
-                    </blockquote>
-                    <p class="client-quote--author">Dr. Jamika Burge</p>
                 </div>
-                <div class="client-quote client-quote--second">
-                    <blockquote>
-                        <p>Solis is a cutting edge company and knows the importance of excellence. Having been in business for 21 years, I know when I`ve found a competent professional and more importantly a company with integrity. I highly recommend this company and am available for further reference if needed.</p>
-                    </blockquote>
-                    <p class="client-quote--author">Evie-Rose Prosse</p>
-                </div>
-                <div class="client-quote client-quote--third">
-                    <blockquote>
-                        <p>I can`t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is a developer and can build a site from scratch. She understands functionality and is great at constructing a site that is robust and fully functioning. </p>
-                    </blockquote>
-                    <p class="client-quote--author">Elvis Mooney</p>
-                </div>
-                <div class="client-quote client-quote--fourth">
-                    <blockquote>
-                        <p>Solis Solutions was referred to me by a trustworthy friend.  After reviewing his website, I decided to give Solis company Solutions a try.  I am happy to say I was not disappointed! From the onset, I knew PWDS was a team I could work with.  I worked with Toinette, who listened to my desires and offered professional advice and expertise. </p>
-                    </blockquote>
-                    <p class="client-quote--author">Taha Mccartney</p>
-                </div>
-                <hr>
+                <!-- CAROUSEL -->    
             </section>
-            <section>
-                <div>
+            <hr>
+            <section class="contacts">
+                <div class="contacts__title-container">
                     <h2>Contact  our <span>sales team</span></h2>
                     <p>Our team is happy to answer your sales questions. Fill out the form and we`ll be in touch as soon as possible.</p>
                 </div>
-                <form action="#" method="post">
-                    <label for="name">
-                        <input type="text" name="name" id="name" placeholder="Your name">
+                <form class="contacts__form" action="#" method="post">
+                    <label class="contacts__form--name-label form-label" for="name">
+                        <input class="contacts__form--name-field form-field" type="text" name="name" id="name" placeholder="Your name">
                     </label>
-                    <label for="email">
-                        <input type="email" name="email" id="email" placeholder="Email">
+                    <label class="contacts__form--email-label form-label" for="email">
+                        <input class="contacts__form--email-field form-field" type="email" name="email" id="email" placeholder="Email">
                     </label>
-                    <label for="comment">
-                        <input type="text" name="comment" id="comment" placeholder="Tell more">
+                    <label class="contacts__form--comment-label form-label" for="comment">
+                        <input class="contacts__form--comment-field form-field" type="text" name="comment" id="comment" placeholder="Tell more">
                     </label>
                     <div class="btn-container">
                         <button class="btn">SEND REQuest</button>
@@ -282,13 +281,13 @@
                 </form>
             </section>
         </main>
-        <hr>
-        <footer>
-            <p>© 2020 Solisgroup. All Rights Reserved.</p>
-            <p>made by</p>
-            <p>Zgraya.digital</p>
-            <p>User Agreement</p>
-            <p>Privacy Policy</p>
+        <footer class="footer">
+            <hr>
+            <div class="footer__rights">
+                <span class="footer__rights--1">© 2020 Solisgroup. All Rights Reserved.</span>
+                <span class="footer__rights--2"><span>made by</span>Zgraya.digital</span>
+                <span class="footer__rights--3"><span>User Agreement</span>Privacy Policy</span>
+            </div>
         </footer>
         <a href="../index.html" style="display: block; font-size:30px;text-align: center; color: black;">Back to HW list</a>
     </div>

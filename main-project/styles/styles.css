@@ -93,6 +93,11 @@ h2 span {
   font-style: italic;
 }
 
+main > hr {
+  margin: 0px 5% 120px 5%;
+  opacity: 0.1;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -554,9 +559,13 @@ h2 span {
 
 .clients {
   margin: 0 5% 196px 5%;
+  display: flex;
+  align-items: center;
 }
 
 .clients__title {
+  margin-left: 8%;
+  margin-right: 7.5%;
   max-width: 28.5%;
 }
 .clients__title h2 {
@@ -602,6 +611,7 @@ h2 span {
   color: white;
   opacity: 0.8;
 }
+
 .client-quote--author {
   font-family: Playfair Display;
   font-style: italic;
@@ -612,6 +622,75 @@ h2 span {
   color: white;
   left: 48px;
   bottom: 48px;
+}
+
+.contacts {
+  margin: 0 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title-container {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.contacts__form {
+  width: 40.6%;
+}
+.contacts__form label {
+  display: block;
+}
+
+.form-field {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(38, 43, 64, 0.1);
+}
+.form-field::placeholder {
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.form-label {
+  margin-bottom: 40px;
+}
+
+.footer {
+  margin: 0 5% 60px 5%;
+}
+.footer hr {
+  margin: 128px 0 23px 0;
+}
+
+.footer__rights {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.footer__rights--1 {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.footer__rights--2 {
+  flex: 1;
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__rights--2 span {
+  opacity: 0.6;
+  margin-right: 12px;
+}
+.footer__rights--3 {
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__rights--3 span {
+  margin-right: 32px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+.footer {
+    margin: 0 5% 60px 5%;
+
+    hr {
+        margin: 128px 0 23px 0  ;
+    }
+
+}
+
+.footer__rights {
+    @include flex-between;
+    text-align: center;
+    &--1{
+        font-size: 14px;
+        opacity: 0.6;
+    }
+    
+    &--2 {
+        flex: 1;
+        align-self: flex-end;
+        font-size: 14px;
+        line-height: 24px;
+        span {
+            opacity: 0.6;
+            margin-right: 12px;
+
+        }
+    }
+    &--3 {
+        font-size: 14px;
+        line-height: 24px;
+
+        span {
+            margin-right: 32px;
+        }
+    }
+}

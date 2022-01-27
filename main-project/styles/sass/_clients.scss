@@ -1,8 +1,15 @@
 .clients {
     margin: 0 5% 196px 5%;
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    
 }
 
 .clients__title {
+    margin-left: 8%;
+    margin-right: 7.5%;
+
     h2 {
         margin-bottom: 20px;
     }
@@ -49,9 +56,6 @@
         margin: 51px 48px 0 48px;
         color: white;
         opacity: 0.8;
-    }
-
-    &--author {
     }
 }
 
