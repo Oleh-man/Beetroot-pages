@@ -82,6 +82,17 @@ img {
   width: 100%;
 }
 
+h2 {
+  font-family: Playfair Display;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+}
+h2 span {
+  color: #85BBB1;
+  font-style: italic;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -121,6 +132,7 @@ img {
 }
 
 .header__theme-container {
+  box-sizing: content-box;
   width: 25px;
   height: 25px;
   padding: 7px;
@@ -168,7 +180,7 @@ img {
   opacity: 0.3;
   height: 13px;
   width: 109px;
-  top: 50%;
+  top: 60%;
   left: 11px;
 }
 
@@ -213,7 +225,7 @@ img {
   top: 55px;
   display: flex;
   justify-content: space-between;
-  width: 761px;
+  width: 66%;
   height: 570px;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -377,10 +389,6 @@ img {
   margin-bottom: 120px;
 }
 .video-section h2 {
-  font-family: Playfair Display;
-  font-size: 40px;
-  line-height: 48px;
-  font-weight: 400;
   margin: 0 0 20px 192px;
 }
 .video-section h2 span {
@@ -394,6 +402,8 @@ img {
 
 .main-app {
   display: flex;
+  position: relative;
+  margin: 0 5% 151px 5%;
 }
 .main-app__container {
   position: relative;
@@ -406,6 +416,7 @@ img {
   border: 1px solid white;
 }
 .main-app__self {
+  box-sizing: content-box;
   position: relative;
   background-color: #161926;
   border-radius: 12px;
@@ -502,6 +513,105 @@ img {
   background: #FFFFFF;
   opacity: 0.06;
   border-radius: 4px;
+}
+
+.main-app__features {
+  position: absolute;
+  display: grid;
+  row-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 44px;
+  left: 34%;
+  width: 66%;
+  padding: 72px 0 72px 64px;
+}
+.main-app__features h4 {
+  font-family: Playfair Display;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  margin-bottom: 14px;
+}
+.main-app__features p {
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+.main-app__features .feature__item {
+  max-width: 320px;
+}
+.main-app__features .feature__btn--container {
+  margin-top: 22px;
+  border: 1px solid #E4E4E4;
+  height: 94px;
+  max-width: 308px;
+}
+.main-app__features .feature__btn {
+  margin: 35px 30%;
+}
+
+.clients {
+  margin: 0 5% 196px 5%;
+}
+
+.clients__title {
+  max-width: 28.5%;
+}
+.clients__title h2 {
+  margin-bottom: 20px;
+}
+.clients__title p {
+  opacity: 0.8;
+}
+
+.client-quote {
+  position: relative;
+  width: 468px;
+  height: 333px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.client-quote--first {
+  background-image: url(../images/comment-img1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.client-quote--second {
+  background-image: url(../images/comment-img2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.client-quote--third {
+  background-image: url(../images/comment-img3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.client-quote--fourth {
+  background-image: url(../images/comment-img4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.client-quote blockquote {
+  font-size: 16px;
+  margin: 51px 48px 0 48px;
+  color: white;
+  opacity: 0.8;
+}
+.client-quote--author {
+  font-family: Playfair Display;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  color: white;
+  left: 48px;
+  bottom: 48px;
 }
 
 /*# sourceMappingURL=styles.css.map */

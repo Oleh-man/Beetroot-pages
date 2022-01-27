@@ -41,6 +41,8 @@
 }
 
 .header__theme-container {
+    box-sizing: content-box;
+
     width: 25px;
     height: 25px;
     padding: 7px;

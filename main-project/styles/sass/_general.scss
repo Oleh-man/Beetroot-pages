@@ -29,3 +29,10 @@ body {
 img {
     width: 100%;
 }
+
+h2 {
+    @include semi-title;
+    span {
+        @include italic-span;
+    }
+}
