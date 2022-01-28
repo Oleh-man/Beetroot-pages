@@ -1,24 +1,25 @@
 .video__container {
+    box-sizing: border-box;
     position: relative;
-    border: 1px solid #e4e4e4;
+    border: 1px solid #E4E4E4;
     border-radius: 32px;
-    margin: 0 188px 55px 188px;
-
-    iframe {
-        width: 812px;
-        height: 502px;
-        margin: 25px 60px 20px 28px;
-        border: 1px solid black;
-        border-top: 0;
+    max-width: 900px;
+    max-height: 552px;
+    margin: 0 14.6% 55px 14.6%;
+    padding: 1.9% 4.7% 1.1% 2.2%;
+    
+    video {
+        width: 100%;
     }
 
     .video__not-camera {
         position: absolute;
         width: 12px;
         height: 12px;
-        top: 270px;
-        left: 8px;
-        border: 1px solid #E4E4E4;
+        // top: 270px;
+        top: calc(50% - 6px);
+        left: 0.9%;
+        border: 1px solid #E4E4E4; 
         box-sizing: border-box;
         border-radius: 32px;
         z-index: -1;
@@ -28,8 +29,8 @@
         position: absolute;
         width: 32px;
         height: 32px;
-        top: 260px;
-        right: 14px;
+        top: calc(50% - 16px);
+        right: 1.5%;
         border: 1px solid #E4E4E4;
         border-radius: 32px;
         z-index: -1;
@@ -40,7 +41,7 @@
     margin-bottom: 120px;
 
     & h2 {
-        margin: 0 0 20px 192px;
+        margin: 0 0 20px 15%;
 
         span {
             @include italic-span;
@@ -49,6 +50,6 @@
 
     p {
         width: 70%;
-        margin-left: 192px;
+        margin-left: 15%;
     }
 }

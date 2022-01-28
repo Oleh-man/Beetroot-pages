@@ -10,6 +10,10 @@
     & span {
         @include italic-span;
     }
+
+    @include small-tablet {
+        width: 70%;
+    }
 }
 
 .banner-section__paragraph {

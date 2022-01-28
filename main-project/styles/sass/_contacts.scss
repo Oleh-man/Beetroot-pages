@@ -6,7 +6,10 @@
 
 .contacts__title-container {
     max-width: 500px;
-    margin-bottom: 20px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
 }
 
 .contacts__form {
@@ -30,6 +33,7 @@
     width: 100%;
     border: 0;
     border-bottom: 1px solid hsla(230, 25%, 20%, 0.1);
+    outline: none;
 }
 
 .form-label {

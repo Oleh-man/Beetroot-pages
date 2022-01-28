@@ -1,27 +1,26 @@
 .main-app {
-    display: flex;
     position: relative;
     margin: 0 5% 151px 5%;
     
     &__container {
         position: relative;
-        background-image: url(../images/app-background.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top center;
-        width: 566px;
-        height: 540px;
-        border: 1px solid white;
+    }
+
+    &__background {
+        max-width: 566px;
+        max-height: 540px;
     }
 
     // CARD
     &__self {
+
         box-sizing: content-box;
-        position: relative;
+        position: absolute;
+        top: 19%;
+        left: 6.6%;
         background-color: #161926;
         border-radius: 12px;
         width: 200px;
-        margin: 104px 250px 105px 76px;
         padding: 20px 21px 12px 19px;
         color: white;
     }
@@ -98,7 +97,7 @@
     padding: 0 5px 0 10px;
     font-size: 14px;
     line-height: 24px;
-    width: 79px;
+    width: 94px;
     border-radius: 4px
 }
 
@@ -119,6 +118,11 @@
     border-radius: 4px;
 }
 
+.main-app__radio {
+    @include flex-between;
+
+}
+
 // FEATURES
 .main-app__features {
     position: absolute;
@@ -127,35 +131,63 @@
     grid-template-columns: 1fr 1fr;
     background-color: rgba(255, 255, 255, 0.9);
     top: 44px;
-    left: 34%;
-    width: 66%;
-    padding: 72px 0 72px 64px;
-
+    right: 0px;
+    max-width: 66%;
+    padding: 72px 0 58px 64px;
+    
     h4 {
         @include semi-title;
         font-size: 24px;
         line-height: 48px;
         margin-bottom: 14px;
+        
+        @include tablet {
+            margin-bottom: 0px;
+        }
     }
-
+    
     p {
         margin-bottom: 16px;
         opacity: 0.8;
-    }
 
+        @include tablet {
+            margin-bottom: 0px;
+        }
+    }
+    
     .feature__item {
         max-width: 320px;
     }
-
+    
     .feature__btn--container {
         margin-top: 22px;
         border: 1px solid #E4E4E4;
         height: 94px;
-        max-width: 308px;
-    }
+        max-width: 100%;
 
+        @include tablet {
+            border: 0;
+        }
+    }
+    
     .feature__btn {
+        max-width: 100%;
         margin: 35px 30%;
+
+        button {
+            letter-spacing: 0;
+            // font-size: 12px;
+
+        }
+    }
+    
+    @include tablet {
+        grid-template-columns: 1fr;
+        top: 0px;
+        left: 45%;
+        row-gap: 12px;
+        padding: 50px 0 58px 40px;
+        
     }
 }
 

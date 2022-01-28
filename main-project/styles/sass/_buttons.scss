@@ -3,7 +3,7 @@
 }
 
 .banner-section__btn {
-    margin-left: 64px;
+    margin-left: 5%;
 }
 
 .btn__underline {
@@ -11,8 +11,8 @@
     background-color: $btn-color;
     opacity: 0.3;
     height: 13px;
-    width: 109px;
-    top: 60%;
+    width: 97px;
+    top: 65%;
     left: 11px;
 }
 
@@ -23,17 +23,17 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: 0.08em;
     text-transform: uppercase;
     padding: 0;
+    outline: none;
 }
 
 .contact-btn__underline {
-    width: 185px;
+    width: 155px;
     left: 11px;
 }
 
 .request-btn__underline {
-    width: 170px;
+    width: 140px;
     left: 13px;
 }

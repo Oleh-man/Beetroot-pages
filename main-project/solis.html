@@ -113,7 +113,8 @@
             </section>
             <section class="video-section">
                 <div class="video__container">
-                    <iframe src="//www.youtube.com/embed/vnbN9V_2Guk" allowfullscreen></iframe>
+                    <!-- <iframe src="//www.youtube.com/embed/vnbN9V_2Guk" allowfullscreen></iframe> -->
+                    <video src="images/video.mp4" autoplay loop></video>
                     <div class="video__not-camera"></div>
                     <div class="video__not-btn"></div>
                 </div>
@@ -122,9 +123,9 @@
             </section>
             <section class="main-app">
                 <div class="main-app__container">
-                    <!-- <div class="main-app__background">
+                    <div class="main-app__background">
                         <img src="images/app-background.png" alt="application background">
-                    </div> -->
+                    </div>
                     <div class="main-app__self">
                         <div class="main-app__coin-select">
                             <p>Sell</p>
@@ -178,8 +179,14 @@
                             </div>
                         </div>
                         <hr>
-                        <input type="radio" name="exchange" id="#" checked><span class="app-main-text">On Exchange</span>
-                        <input type="radio" name="exchange" id="#"><span class="app-main-text">On Wallet</span>
+                        <div class="main-app__radio">
+                            <label for="exchange">
+                                <input class="main-app__radio--exchange" type="radio" name="exchange" id="exchange" checked><span class="app-main-text">On Exchange</span>
+                            </label>
+                            <label for="wallet">
+                                <input class="main-app__radio--wallet" type="radio" name="exchange" id="wallet"><span class="app-main-text">On Wallet</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="main-app__features">
@@ -195,7 +202,7 @@
                     </div>
                     <div class="feature__item">
                         <h4>Time Settlement Swaps</h4>
-                        <p>LBTC / Lightning and other sidechain<br>swaps</p>
+                        <p>LBTC / Lightning and other sidechain swaps</p>
                     </div>
                     <div class="feature__item feature__btn--container">
                         <div class="btn-container feature__btn">
@@ -289,7 +296,7 @@
                 <span class="footer__rights--3"><span>User Agreement</span>Privacy Policy</span>
             </div>
         </footer>
-        <a href="../index.html" style="display: block; font-size:30px;text-align: center; color: black;">Back to HW list</a>
+        <a href="../index.html" style="display: block; font-size:30px; text-align: center; color: black;">Back to HW list</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

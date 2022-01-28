@@ -1,25 +1,38 @@
 .invest-section {
-    display: flex;
     position: relative;
+    margin: 0 5%;
     z-index: 1;
 }
 
 .invest__img {
-    position: relative;
-    margin-left: 5%;
+    // position: relative;
     width: 566px;
     height: 680px;
 }
 
 .invest__info {
+    box-sizing: content-box;
     position: absolute;
     right: 5%;
     top: 55px;
     display: flex;
     justify-content: space-between;
-    width: 66%;
+    width: 59.45%;
     height: 570px;
     background-color: rgba($bg-color, 0.9);
+
+    @include tablet {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: initial;
+        right: 64px;
+        left: 64px;
+    }
+
+    @include small-tablet {
+
+    }
 }
 
 .invest__amounts {
@@ -31,16 +44,38 @@
     .amount__description {
         margin-bottom: 50px;
         opacity: 0.8;
+
+        @media (max-width: 1080px) {
+            margin-bottom: 10px;
+        }
     }
 
     hr {
-        margin: 0 144px;
+        width: 25%;
+        margin: auto;
         border: 0;
         border-top: 1px solid $title-color;
     }
 
     .amount__second-item {
         margin-top: 41px;
+
+        @include tablet {
+            margin: 0 5% 0 5%;
+            white-space: nowrap;
+            
+        }
+    }
+
+    @include tablet {
+        @include flex-between;
+        
+        hr {
+            display: none;
+        }
+        height: initial;
+        margin-top: 5%;
+        width: 80%;
     }
 }
 
@@ -51,11 +86,19 @@
     line-height: 72px;
     margin-bottom: 12px;
 
+    @include tablet {
+        white-space: nowrap;
+        font-size: 44px;
+        line-height: 52px;
+    }
+
     span {
         font-size: 40px;
         line-height: 40px;
         color: #c5c5c5;
     }
+
+
 }
 
 .invest__text {
@@ -69,10 +112,20 @@
 
     & p:first-child {
         margin-bottom: 26px;
+        
     }
     
 
     & p:nth-child(2) {
         margin-bottom: 52px;
+
+        @media (max-width: 1080px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include tablet {
+        width: 80%;
+        margin-top: 0;
     }
 }

@@ -1,33 +1,25 @@
 .main-quote {
     position: relative;
     max-width: 90%;
-    // height: 400px;
     margin: 0 5% 222px 5%;
-    padding: 101px 0  0 11%;
-    // background-image: url(../images/quote-background.png);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // background-position: top center;
-
-    
+    // padding: 101px 0  0 11%;
 }
 
 .quote__background {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     width: 100%;
-    z-index: -1;
 }
 
 .quote__img {
     position: absolute;
-    width: 100px;
-    height: 81px;
-    top: 70px;
+    width: 8.7%;
+    max-height: 81px;
+    top: 17.5%;
     left: 6%;
 }
 .quote__container {
+    position: absolute;
+    top: 25.25%;
+    left: 11.2%;
     max-width: 751px;
     height: 198px;
     
@@ -37,7 +29,7 @@
         font-size: 32px;
         line-height: 46px;
         letter-spacing: 0.04em;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 40px;
     }
 

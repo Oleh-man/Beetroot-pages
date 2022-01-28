@@ -25,3 +25,21 @@
     line-height: 24px;
     opacity: 0.3;
 }
+
+@mixin tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin small-tablet {
+    @media (max-width: $small-tablet-width) {
+        @content;
+    }
+}
+@mixin phone {
+    @media (max-width: $phone-width) {
+        @content;
+    }
+}
+
