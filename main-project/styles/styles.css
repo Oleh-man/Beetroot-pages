@@ -92,10 +92,21 @@ h2 span {
   color: #85BBB1;
   font-style: italic;
 }
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
 
 main > hr {
   margin: 0px 5% 120px 5%;
   opacity: 0.1;
+}
+@media (max-width: 1024px) {
+  main > hr {
+    margin-bottom: 50px;
+  }
 }
 
 .header {
@@ -174,6 +185,11 @@ main > hr {
 
 .banner-section {
   margin-bottom: 163px;
+}
+@media (max-width: 1024px) {
+  .banner-section {
+    margin-bottom: 70px;
+  }
 }
 
 .btn-container {
@@ -346,8 +362,7 @@ main > hr {
 }
 .services-section hr {
   margin: 0 0 32px 0;
-  border: 0;
-  border-top: 1px solid #E4E4E4;
+  border: 1px solid #E4E4E4;
 }
 .services-section h3 {
   font-family: Playfair Display;
@@ -360,14 +375,37 @@ main > hr {
   color: #85BBB1;
   font-style: italic;
 }
+@media (max-width: 1024px) {
+  .services-section h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
 .services-section p {
   opacity: 0.8;
+}
+@media (max-width: 1024px) {
+  .services-section p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .services-section {
+    row-gap: 32px;
+    margin: 70px 7.5%;
+  }
 }
 
 .main-quote {
   position: relative;
   max-width: 90%;
   margin: 0 5% 222px 5%;
+}
+@media (max-width: 1024px) {
+  .main-quote {
+    margin-bottom: 70px;
+  }
 }
 
 .quote__background {
@@ -384,10 +422,9 @@ main > hr {
 
 .quote__container {
   position: absolute;
-  top: 25.25%;
+  bottom: 25.25%;
   left: 11.2%;
   max-width: 751px;
-  height: 198px;
 }
 .quote__container blockquote {
   font-family: Lato;
@@ -396,7 +433,13 @@ main > hr {
   line-height: 46px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 5%;
+}
+@media (max-width: 1024px) {
+  .quote__container blockquote {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 .quote__container p {
   font-family: Playfair Display;
@@ -456,6 +499,11 @@ main > hr {
 .video-section p {
   width: 70%;
   margin-left: 15%;
+}
+@media (max-width: 1024px) {
+  .video-section {
+    margin-bottom: 55px;
+  }
 }
 
 .main-app {
@@ -537,6 +585,11 @@ main > hr {
   display: flex;
   justify-content: space-between;
   margin-bottom: 18px;
+}
+@media (max-width: 1024px) {
+  .main-app {
+    margin-bottom: 70px;
+  }
 }
 
 .exchange__count {
@@ -636,7 +689,8 @@ main > hr {
     top: 0px;
     left: 45%;
     row-gap: 12px;
-    padding: 50px 0 58px 40px;
+    margin-top: 31px;
+    padding: 25px 0 0px 40px;
   }
 }
 
@@ -645,17 +699,31 @@ main > hr {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .clients {
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+}
 
 .clients__title {
   margin-left: 8%;
   margin-right: 7.5%;
   max-width: 28.5%;
 }
+@media (max-width: 1024px) {
+  .clients__title {
+    max-width: 468px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
 .clients__title h2 {
   margin-bottom: 20px;
 }
 .clients__title p {
   opacity: 0.8;
+  text-align: left;
 }
 
 .client-quote {
@@ -707,6 +775,10 @@ main > hr {
   bottom: 48px;
 }
 
+.carousel {
+  max-width: 468px;
+}
+
 .contacts {
   margin: 0 5% 0 5%;
   display: flex;
@@ -714,7 +786,7 @@ main > hr {
 }
 
 .contacts__title-container {
-  max-width: 500px;
+  max-width: 43.4%;
 }
 .contacts__title-container h2 {
   margin-bottom: 20px;
@@ -750,6 +822,11 @@ main > hr {
 }
 .footer hr {
   margin: 128px 0 23px 0;
+}
+@media (max-width: 1024px) {
+  .footer hr {
+    margin-top: 50px;
+  }
 }
 
 .footer__rights {

@@ -2,7 +2,11 @@
     margin: 0 5% 60px 5%;
 
     hr {
-        margin: 128px 0 23px 0  ;
+        margin: 128px 0 23px 0;
+
+        @include tablet {
+            margin-top: 50px;
+        }
     }
 
 }

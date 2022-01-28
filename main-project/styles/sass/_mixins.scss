@@ -26,6 +26,12 @@
     opacity: 0.3;
 }
 
+@mixin semi-title--tablet {
+    font-size: 30px;
+    line-height: 36px;
+    
+}
+
 @mixin tablet {
     @media (max-width: $tablet-width) {
         @content;

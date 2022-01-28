@@ -2,7 +2,10 @@
     position: relative;
     max-width: 90%;
     margin: 0 5% 222px 5%;
-    // padding: 101px 0  0 11%;
+
+    @include tablet {
+        margin-bottom: 70px;
+    }
 }
 
 .quote__background {
@@ -18,10 +21,10 @@
 }
 .quote__container {
     position: absolute;
-    top: 25.25%;
+    // top: 25.25%;
+    bottom: 25.25%;
     left: 11.2%;
     max-width: 751px;
-    height: 198px;
     
     blockquote {
         font-family: Lato;
@@ -30,7 +33,13 @@
         line-height: 46px;
         letter-spacing: 0.04em;
         color: #ffffff;
-        margin-bottom: 40px;
+        margin-bottom: 5%;
+        
+        @include tablet {
+            font-size: 25px;
+            line-height: 35px;
+            
+        }
     }
 
     p {
