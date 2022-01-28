@@ -14,12 +14,17 @@
     @include small-tablet {
         width: 70%;
     }
+
+    @include small-tablet {
+        font-size: 25px;
+        line-height: 35px;
+    }
 }
 
 .banner-section__paragraph {
     opacity: 0.8;
     padding-left: 5%;
-    width: 465px;
+    max-width: 465px;
     margin-bottom: 48px;
 }
 

@@ -146,6 +146,11 @@ main > hr {
   line-height: 24px;
   letter-spacing: 0.08em;
 }
+@media (max-width: 768px) {
+  .header__navigation ul {
+    display: none;
+  }
+}
 
 .header__theme-container {
   box-sizing: content-box;
@@ -155,6 +160,55 @@ main > hr {
   margin-left: 8px;
   background-color: rgba(38, 42, 63, 0.3);
   border-radius: 1px;
+}
+
+.nav__drop {
+  display: none;
+  list-style: none;
+}
+.nav__drop a {
+  text-decoration: none;
+  color: #262A3F;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+}
+.nav__drop .c:hover #drop-down {
+  display: flex;
+}
+.nav__drop .c:focus-within #drop-down {
+  display: flex;
+}
+.nav__drop .c #drop-down {
+  position: absolute;
+  width: fit-content;
+  display: none;
+  flex-direction: column;
+  top: 60px;
+  left: 50%;
+  background-color: var(--white-smoke);
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--shadow);
+  transform: translateX(-10%);
+  text-align: center;
+}
+.nav__drop .c #drop-down .clinks {
+  display: block;
+  padding: 2px 0;
+  text-decoration: none;
+}
+.nav__drop .c #drop-down .clinks i {
+  padding: 0 2px;
+}
+.nav__drop .c #drop-down .clinks:hover {
+  background-color: var(--shadow);
+}
+@media (max-width: 768px) {
+  .nav__drop {
+    display: block;
+    flex: auto;
+  }
 }
 
 .banner-section__title {
@@ -175,11 +229,17 @@ main > hr {
     width: 70%;
   }
 }
+@media (max-width: 768px) {
+  .banner-section__title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
 
 .banner-section__paragraph {
   opacity: 0.8;
   padding-left: 5%;
-  width: 465px;
+  max-width: 465px;
   margin-bottom: 48px;
 }
 
@@ -239,8 +299,8 @@ main > hr {
 }
 
 .invest__img {
-  width: 566px;
-  height: 680px;
+  max-width: 566px;
+  height: auto;
 }
 
 .invest__info {
@@ -264,6 +324,15 @@ main > hr {
     left: 64px;
   }
 }
+@media (max-width: 768px) {
+  .invest__info {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0%;
+  }
+}
+
 .invest__amounts {
   margin: 42px 0 42px 1px;
   width: 371px;
@@ -304,6 +373,12 @@ main > hr {
   }
   .invest__amounts hr {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .invest__amounts {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 

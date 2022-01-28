@@ -5,9 +5,8 @@
 }
 
 .invest__img {
-    // position: relative;
-    width: 566px;
-    height: 680px;
+    max-width: 566px;
+    height: auto;
 }
 
 .invest__info {
@@ -31,7 +30,10 @@
     }
 
     @include small-tablet {
-
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0%;
     }
 }
 
@@ -77,6 +79,11 @@
         margin-top: 5%;
         width: 80%;
     }
+
+    @include small-tablet {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 
 .amount__money {
@@ -108,6 +115,10 @@
 
     p {
         opacity: 0.8;
+
+        @include small-tablet {
+
+        }
     }
 
     & p:first-child {
