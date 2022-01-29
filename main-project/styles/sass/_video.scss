@@ -1,0 +1,67 @@
+.video__container {
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #E4E4E4;
+    border-radius: 32px;
+    max-width: 900px;
+    max-height: 552px;
+    margin: 0 14.6% 55px 14.6%;
+    padding: 1.9% 4.7% 1.1% 2.2%;
+    
+    video {
+        width: 100%;
+    }
+
+    .video__not-camera {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        // top: 270px;
+        top: calc(50% - 6px);
+        left: 0.9%;
+        border: 1px solid #E4E4E4; 
+        box-sizing: border-box;
+        border-radius: 32px;
+        z-index: -1;
+    }
+
+    .video__not-btn {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: calc(50% - 16px);
+        right: 1.5%;
+        border: 1px solid #E4E4E4;
+        border-radius: 32px;
+        z-index: -1;
+
+        @include tablet {
+            width: 2.5%;
+        }
+    }
+
+    @include small-tablet {
+        padding-left: 4.5%;
+    }
+}
+
+.video-section {
+    margin-bottom: 120px;
+
+    & h2 {
+        margin: 0 0 20px 15%;
+
+        span {
+            @include italic-span;
+        }
+    }
+
+    p {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    @include tablet {
+        margin-bottom: 55px;
+    }
+}

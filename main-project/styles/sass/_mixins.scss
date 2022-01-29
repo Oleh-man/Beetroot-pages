@@ -1,0 +1,51 @@
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin semi-title {
+    font-family: Playfair Display;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+@mixin italic-span {
+    color: $title-color;
+    font-style: italic;
+}
+
+@mixin card-icons-size {
+    width: 18px;
+    height: 18px;
+}
+
+@mixin app-text {
+    font-size: 12px;
+    line-height: 24px;
+    opacity: 0.3;
+}
+
+@mixin semi-title--tablet {
+    font-size: 30px;
+    line-height: 36px;
+    
+}
+
+@mixin tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin small-tablet {
+    @media (max-width: $small-tablet-width) {
+        @content;
+    }
+}
+@mixin phone {
+    @media (max-width: $phone-width) {
+        @content;
+    }
+}
+

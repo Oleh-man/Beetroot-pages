@@ -1,0 +1,68 @@
+.main-quote {
+    position: relative;
+    max-width: 90%;
+    margin: 0 5% 222px 5%;
+
+    @include tablet {
+        margin-bottom: 70px;
+    }
+}
+
+.quote__background {
+    width: 100%;
+}
+
+.quote__img {
+    position: absolute;
+    width: 8.7%;
+    max-height: 81px;
+    top: 17.5%;
+    left: 6%;
+}
+.quote__container {
+    position: absolute;
+    // top: 25.25%;
+    top: 25.25%;
+    left: 11.2%;
+    max-width: 751px;
+    
+    blockquote {
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        margin-bottom: 5%;
+        
+        @include tablet {
+            font-size: 2.5vw;
+            line-height: 3.6vw;
+        }
+
+        @include small-tablet {
+            // font-size: 4vw;
+            // line-height: 100%;
+
+        }
+    }
+
+    p {
+        font-family: Playfair Display;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        color: #FFFFFF;
+
+        @include small-tablet {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
+    @include small-tablet {
+        bottom: 10%;
+    }
+}

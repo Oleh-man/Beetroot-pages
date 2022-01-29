@@ -1,0 +1,38 @@
+.banner-section__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    width: 44.2%;
+    padding-left: 5%;
+    margin-top: 158px;
+    margin-bottom: 24px;
+
+    & span {
+        @include italic-span;
+    }
+
+    @include small-tablet {
+        width: 70%;
+    }
+
+    @include small-tablet {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+.banner-section__paragraph {
+    opacity: 0.8;
+    padding-left: 5%;
+    max-width: 465px;
+    margin-bottom: 48px;
+}
+
+.banner-section {
+    margin-bottom: 163px;
+
+    @include tablet {
+        margin-bottom: 70px;
+    }
+}

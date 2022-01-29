@@ -1,0 +1,118 @@
+.header {
+    position: sticky;
+    top: 31px;
+    width: 100%;  // incorrect working
+    z-index: 3;
+    @include flex-between;
+    padding: 24px 5% 24px 5%;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    margin-bottom: 158px;
+
+    nav {
+        flex: 1;
+    }
+
+    &__logo img {
+        height: 32px;
+        width: auto;
+    }
+
+    &__theme-container img {
+        width: 25px;
+        height: 25px;
+
+    }
+}
+
+.header__navigation ul {
+    @include flex-between;
+    justify-content: flex-end;
+
+    .navigation__item {
+        margin-right: 2.5%;    
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+    }
+
+    @include small-tablet {
+        display: none;
+    }
+}
+
+.header__theme-container {
+    box-sizing: content-box;
+
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    margin-left: 8px;
+    background-color: rgba(38, 42, 63, 0.3);
+    border-radius: 1px;
+}
+ .nav__drop {
+     display: none;
+     list-style: none;
+
+     a {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+     }
+
+     .c{
+        &:hover #drop-down{
+            display: flex;
+            background-color: rgba($bg-color, 0.5);
+        }
+
+        &:focus-within #drop-down{
+            display: flex;
+            background-color: rgba($bg-color, 0.5)
+        }
+
+        #drop-down{
+            position: absolute;
+            width: fit-content;
+            display: none;
+            flex-direction: column;
+            top: 60px;
+            left: 50%;
+            background-color: var(--white-smoke);
+            border-radius: 5px;
+            box-shadow: 0 0 10px var(--shadow);
+            transform: translateX(-10%);
+            text-align: center;
+            
+            .clinks{
+                display: block;
+                padding: 2px 0;
+                text-decoration: none;
+
+                i{
+                    padding: 0 2px;
+                }
+
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.342);
+                    
+                }
+            }
+        }
+    }
+     @include small-tablet {
+         display: block;
+         flex: auto;
+     }
+ }

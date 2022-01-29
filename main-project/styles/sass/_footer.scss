@@ -1,0 +1,58 @@
+.footer {
+    margin: 0 5% 60px 5%;
+
+    hr {
+        margin: 128px 0 23px 0;
+
+        @include tablet {
+            margin-top: 50px;
+        }
+    }
+
+}
+
+.footer__rights {
+    @include flex-between;
+    text-align: center;
+    &--1{
+        font-size: 14px;
+        opacity: 0.6;
+    }
+    
+    &--2 {
+        flex: 1;
+        align-self: flex-end;
+        font-size: 14px;
+        line-height: 24px;
+        
+        .footer__span--made {
+            opacity: 0.6;
+            margin-right: 12px;
+
+            @include small-tablet {
+                margin-right: 0;
+            }
+        }
+
+        @include small-tablet {
+            align-self: center;
+        }
+    }
+
+    &--3 {
+        font-size: 14px;
+        line-height: 24px;
+
+        span {
+            margin-right: 32px;
+
+            @include small-tablet {
+                margin-right: 15%;
+            }
+        }
+    }
+
+    @include small-tablet {
+        flex-direction: column;
+    }
+}

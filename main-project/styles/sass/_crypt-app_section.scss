@@ -1,0 +1,227 @@
+.main-app {
+    position: relative;
+    margin: 0 5% 151px 5%;
+    
+    &__container {
+        position: relative;
+    }
+
+    &__background {
+        max-width: 566px;
+        max-height: 540px;
+
+        @include small-tablet {
+            display: none;
+        }
+    }
+
+    // CARD
+    &__self {
+
+        box-sizing: content-box;
+        position: absolute;
+        top: 19%;
+        left: 6.6%;
+        background-color: #161926;
+        border-radius: 12px;
+        width: 200px;
+        padding: 20px 21px 12px 19px;
+        color: white;
+
+        @include small-tablet {
+            position: relative;
+            margin: auto;
+            top: 0;
+            left: 0;
+        }
+    }
+    
+    hr {
+        &:nth-child(4) {
+            margin-top: 46px;
+        }
+        
+        margin: 16px 0 10px 0;
+        border: 1px solid #FFFFFF ;
+        opacity: 0.1; 
+    }
+
+    &__coin-select {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    & .bit-coin {
+        @include card-icons-size;
+        margin: 0 12px 0 6px;
+    } 
+    
+    & .right-arrow {
+        width: 16px;
+        height: 16px;
+        margin-right: 13px; 
+    }
+
+    & .tether-coin {
+        @include card-icons-size;
+        margin: 0 0 0 6px;
+    }
+
+    .app-main-text {
+        @include app-text;
+    }
+
+    .rate__num {
+        position: absolute;
+        left: 29px;
+        font-size: 20px;
+        line-height: 24px;
+            
+        &--integer {
+            display: inline;
+            font-style: italic;
+            opacity: 0.7;
+        }
+
+        &--float {
+            display: inline;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 24px;
+            margin-left: 6px;
+            opacity: 0.9; 
+        };
+    }
+    
+    &__exchange {
+        @include flex-between;
+        margin-bottom: 18px;
+    }
+
+    @include tablet {
+        margin-bottom: 70px
+    }
+}
+
+.exchange__count {
+    @include flex-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 5px 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    width: 94px;
+    border-radius: 4px
+}
+
+.exchange__coin {
+    @include card-icons-size;
+}
+
+.fees__item {
+    @include flex-between;
+    align-items: center;
+}
+
+.fees__input {
+    width: 51px;
+    height: 17px;
+    background: #FFFFFF;
+    opacity: 0.06;
+    border-radius: 4px;
+}
+
+.main-app__radio {
+    @include flex-between;
+
+}
+
+// FEATURES
+.main-app__features {
+    position: absolute;
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 44px;
+    right: 0px;
+    max-width: 66%;
+    padding: 72px 0 58px 64px;
+    z-index: 1;
+    
+    h4 {
+        @include semi-title;
+        font-size: 24px;
+        line-height: 48px;
+        margin-bottom: 14px;
+        
+        @include tablet {
+            margin-bottom: 0px;
+        }
+    }
+    
+    p {
+        margin-bottom: 16px;
+        opacity: 0.8;
+
+        @include tablet {
+            margin-bottom: 0px;
+        }
+    }
+    
+    .feature__item {
+        max-width: 320px;
+    }
+    
+    .feature__btn--container {
+        margin-top: 22px;
+        border: 1px solid #E4E4E4;
+        height: 94px;
+        max-width: 100%;
+
+        @include tablet {
+            border: 0;
+        }
+    }
+    
+    .feature__btn {
+        max-width: 100%;
+        margin: 35px 30%;
+
+        button {
+            letter-spacing: 0;
+        }
+
+        @include small-tablet {
+            margin: auto;
+        }
+    }
+    
+    @include tablet {
+        grid-template-columns: 1fr;
+        top: 0px;
+        left: 45%;
+        row-gap: 12px;
+        margin-top: 31px;
+        padding: 25px 0 0px 40px;
+    }
+
+    @include small-tablet {
+        position: relative;
+        display: grid;
+        row-gap: 40px;
+        grid-template-columns: 1fr;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+        margin-left: 10%;
+        
+    }
+}
+
+

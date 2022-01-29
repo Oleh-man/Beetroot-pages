@@ -1,0 +1,116 @@
+.clients {
+    margin: 0 5% 196px 5%;
+    display: flex;
+    align-items: center;
+    
+    @include tablet {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    @include small-tablet {
+        margin: 0;
+    }
+}
+
+.clients__title {
+    margin-left: 8%;
+    margin-right: 7.5%;
+
+    @include tablet {
+        max-width: 468px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        opacity: 0.8;
+        text-align: left;
+    }
+    max-width: 28.5%;
+
+}
+
+.client-quote {
+    position: relative;
+    width: 468px;
+    height: 333px;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+    &--first {
+        background-image: url(../images/comment-img1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    } 
+    &--second {
+        background-image: url(../images/comment-img2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    &--third {
+        background-image: url(../images/comment-img3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    &--fourth {
+        background-image: url(../images/comment-img4.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    blockquote {
+        font-size: 16px;
+        margin: 51px 48px 0 48px;
+        color: white;
+        opacity: 0.8;
+
+        @include small-tablet {
+            font-size: 14px;
+            margin-left: 10.2%;
+            margin-top: 5%;
+            margin-bottom: 9.6%;
+        }
+        
+        @include phone {
+            margin-bottom: 1%;
+            line-height: 19px;
+        }
+    }
+
+    @include small-tablet {
+        max-width: 100%;
+    }
+}
+
+.client-quote--author {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    position: absolute;
+    color: white;
+    left: 48px;
+    bottom: 48px;
+
+    @include small-tablet {
+        position: static;
+        margin-left: 10.2%;
+    }
+}
+
+.carousel {
+    max-width: 468px;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+}
