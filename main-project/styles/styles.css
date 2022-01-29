@@ -110,7 +110,8 @@ main > hr {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
+  top: 31px;
   width: 100%;
   z-index: 3;
   display: flex;
