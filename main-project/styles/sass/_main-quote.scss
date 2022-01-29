@@ -22,7 +22,7 @@
 .quote__container {
     position: absolute;
     // top: 25.25%;
-    bottom: 25.25%;
+    top: 25.25%;
     left: 11.2%;
     max-width: 751px;
     
@@ -36,9 +36,14 @@
         margin-bottom: 5%;
         
         @include tablet {
-            font-size: 25px;
-            line-height: 35px;
-            
+            font-size: 2.5vw;
+            line-height: 3.6vw;
+        }
+
+        @include small-tablet {
+            // font-size: 4vw;
+            // line-height: 100%;
+
         }
     }
 
@@ -50,5 +55,14 @@
         line-height: 20px;
         letter-spacing: 0.08em;
         color: #FFFFFF;
+
+        @include small-tablet {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
+    @include small-tablet {
+        bottom: 10%;
     }
 }

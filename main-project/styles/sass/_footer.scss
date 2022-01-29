@@ -24,18 +24,35 @@
         align-self: flex-end;
         font-size: 14px;
         line-height: 24px;
-        span {
+        
+        .footer__span--made {
             opacity: 0.6;
             margin-right: 12px;
 
+            @include small-tablet {
+                margin-right: 0;
+            }
+        }
+
+        @include small-tablet {
+            align-self: center;
         }
     }
+
     &--3 {
         font-size: 14px;
         line-height: 24px;
 
         span {
             margin-right: 32px;
+
+            @include small-tablet {
+                margin-right: 15%;
+            }
         }
+    }
+
+    @include small-tablet {
+        flex-direction: column;
     }
 }

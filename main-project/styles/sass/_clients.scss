@@ -7,6 +7,10 @@
         flex-direction: column;
         margin-bottom: 70px;
     }
+
+    @include small-tablet {
+        margin: 0;
+    }
 }
 
 .clients__title {
@@ -67,6 +71,22 @@
         margin: 51px 48px 0 48px;
         color: white;
         opacity: 0.8;
+
+        @include small-tablet {
+            font-size: 14px;
+            margin-left: 10.2%;
+            margin-top: 5%;
+            margin-bottom: 9.6%;
+        }
+        
+        @include phone {
+            margin-bottom: 1%;
+            line-height: 19px;
+        }
+    }
+
+    @include small-tablet {
+        max-width: 100%;
     }
 }
 
@@ -80,8 +100,17 @@
     color: white;
     left: 48px;
     bottom: 48px;
+
+    @include small-tablet {
+        position: static;
+        margin-left: 10.2%;
+    }
 }
 
 .carousel {
     max-width: 468px;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }

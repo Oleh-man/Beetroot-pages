@@ -7,6 +7,10 @@
 .invest__img {
     max-width: 566px;
     height: auto;
+
+    @include small-tablet {
+        max-width: 100%;
+    }
 }
 
 .invest__info {
@@ -38,7 +42,7 @@
 }
 
 .invest__amounts {
-    margin: 42px 0 42px 1px;
+    margin: 42px 0 42px 0;
     width: 371px;
     height: 486px;
     text-align: center;
@@ -49,6 +53,11 @@
 
         @media (max-width: 1080px) {
             margin-bottom: 10px;
+        }
+
+        @include phone {
+            margin: 0;
+            white-space: pre-wrap;
         }
     }
 
@@ -69,6 +78,13 @@
         }
     }
 
+    .amount__third-item {
+        @include phone {
+            grid-column-start: 1;
+            grid-column-end: 4; 
+        }
+    }
+
     @include tablet {
         @include flex-between;
         
@@ -83,6 +99,13 @@
     @include small-tablet {
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin-top: 5%;
+        margin-bottom: 10px;
+    }
+
+    @include phone {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -138,5 +161,27 @@
     @include tablet {
         width: 80%;
         margin-top: 0;
+    }
+
+    .invest__text--scroll {
+        @include small-tablet {
+            height: 100%;
+            overflow: scroll;
+        }
+    }
+
+    @include small-tablet {
+        height: 40%;
+    }
+
+    @include phone {
+        width: 95%;
+        margin: 0;
+    }
+
+    .btn-container {
+        @include phone {
+            margin-top: 20px;
+        }
     }
 }

@@ -9,6 +9,10 @@
     &__background {
         max-width: 566px;
         max-height: 540px;
+
+        @include small-tablet {
+            display: none;
+        }
     }
 
     // CARD
@@ -23,6 +27,13 @@
         width: 200px;
         padding: 20px 21px 12px 19px;
         color: white;
+
+        @include small-tablet {
+            position: relative;
+            margin: auto;
+            top: 0;
+            left: 0;
+        }
     }
     
     hr {
@@ -138,6 +149,7 @@
     right: 0px;
     max-width: 66%;
     padding: 72px 0 58px 64px;
+    z-index: 1;
     
     h4 {
         @include semi-title;
@@ -180,8 +192,10 @@
 
         button {
             letter-spacing: 0;
-            // font-size: 12px;
+        }
 
+        @include small-tablet {
+            margin: auto;
         }
     }
     
@@ -192,6 +206,21 @@
         row-gap: 12px;
         margin-top: 31px;
         padding: 25px 0 0px 40px;
+    }
+
+    @include small-tablet {
+        position: relative;
+        display: grid;
+        row-gap: 40px;
+        grid-template-columns: 1fr;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+        margin-left: 10%;
+        
     }
 }
 

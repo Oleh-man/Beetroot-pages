@@ -38,4 +38,8 @@
         row-gap: 32px;
         margin: 70px 7.5%;
     }
+
+    @include small-tablet {
+        grid-template-columns: 1fr;
+    }
 }

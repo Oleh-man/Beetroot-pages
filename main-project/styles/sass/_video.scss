@@ -34,6 +34,14 @@
         border: 1px solid #E4E4E4;
         border-radius: 32px;
         z-index: -1;
+
+        @include tablet {
+            width: 2.5%;
+        }
+    }
+
+    @include small-tablet {
+        padding-left: 4.5%;
     }
 }
 

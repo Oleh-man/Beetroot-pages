@@ -1,4 +1,7 @@
 .header {
+    position: fixed;
+    width: 100%;  // incorrect working
+    z-index: 3;
     @include flex-between;
     padding: 24px 5% 24px 5%;
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
@@ -70,11 +73,12 @@
      .c{
         &:hover #drop-down{
             display: flex;
+            background-color: rgba($bg-color, 0.5);
         }
 
         &:focus-within #drop-down{
             display: flex;
-            // background-color: rgba(255, 255, 255, 0.9);;
+            background-color: rgba($bg-color, 0.5)
         }
 
         #drop-down{
@@ -100,7 +104,8 @@
                 }
 
                 &:hover{
-                    background-color: var(--shadow);
+                    background-color: rgba(0, 0, 0, 0.342);
+                    
                 }
             }
         }
@@ -110,24 +115,3 @@
          flex: auto;
      }
  }
-
-// @include small-tablet {
-//     .header__navigation {
-//         &::after {
-//             content: "Navigation";
-//             display: block;
-//             color: $primary-color;
-//             font-weight: 400;
-//             font-size: 14px;
-//             line-height: 24px;
-//             letter-spacing: 0.08em;
-
-            
-//         }
-        
-        
-//         text-align: center;
-//     }
-
-
-// }
