@@ -38,7 +38,7 @@ alert(`OMG it's ${sqrSide * 4} O_O`);
 
 // 1
 let circleRadius = prompt('Enter radius of a circle');
-alert(`Yours circle area is about ${Math.round(2 * Math.PI * Math.pow(circleRadius, 2))}`);
+alert(`Yours circle area is about ${Math.round(Math.PI * Math.pow(circleRadius, 2))}`);
 
 // 2
 let distance = prompt('Enter distance between two cities');
@@ -49,4 +49,4 @@ alert(`Than, your speed will be about ${Math.round(distance / time)} km/h`);
 let dollars = prompt(`Enter sum in dollars`);
 const eruoToUsd = 0.89;
 let yourMoney = Math.round(((dollars * eruoToUsd) + Number.EPSILON) * 100) / 100;           //thx to stackOwerflow
-alert(`You'll receive ${yourMoney} EUR`)
+alert (`You'll receive ${yourMoney} EUR`);
