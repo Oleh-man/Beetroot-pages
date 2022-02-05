@@ -18,5 +18,13 @@ alert(`Your FDD can contain file, that have size of 820Mb, ${Math.floor(userFdd 
 //1
 let wallet = prompt('How much money do you have in your wallet');
 let chocoPrice = prompt('How much is chocolate cost');
-alert(`You can buy ${Math.floor(wallet / chocoPrice)} chocolates`);
-alert(`...and than you'll have ${wallet % chocoPrice} hryvnшas`)
+let amountChocolate = Math.floor(wallet / chocoPrice);
+alert(`You can buy ${amountChocolate} chocolates`);
+let remainder = wallet - amountChocolate * chocoPrice;
+alert(`...and than you'll have ${remainder} hryvnas`);
+
+//3
+let yourNum = +prompt('Enter a three-digit number')
+let firstDigit = yourNum % 10;
+
+alert(firstDigit)
