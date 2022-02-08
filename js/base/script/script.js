@@ -25,7 +25,7 @@ let yourName = prompt('Enter Your Name!');
 alert(`Hello, ${yourName}`);
 
 // 2
-let birthYear = prompt ('Enter year of your birth');
+let birthYear = prompt('Enter year of your birth');
 const yourAge = 2022 - birthYear;
 alert(`You are ${yourAge} or ${yourAge - 1} years old.`);
 
@@ -48,5 +48,5 @@ alert(`Than, your speed will be about ${Math.round(distance / time)} km/h`);
 // 3
 let dollars = prompt(`Enter sum in dollars`);
 const eruoToUsd = 0.89;
-let yourMoney = Math.round(((dollars * eruoToUsd) + Number.EPSILON) * 100) / 100;           //thx to stackOwerflow
+const yourMoney = Math.round(((dollars * eruoToUsd) + Number.EPSILON) * 100) / 100;           //thx to stackOwerflow
 alert (`You'll receive ${yourMoney} EUR`);
