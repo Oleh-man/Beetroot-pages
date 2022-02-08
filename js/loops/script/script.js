@@ -84,3 +84,36 @@ for(i = 0; i <= DIVIDED_NUM; i++){
         alert(`your divisor is ${i}`);
     }
 }
+
+
+// normal
+
+// 1
+const isPalindrome = prompt('Enter five-digit number');
+let firstPalDig = +isPalindrome % 10;
+let secondPalDig = Math.floor(+isPalindrome / 10) % 10;
+let thirdPalDig = Math.floor(+isPalindrome / 100) % 10;
+let fourthPalDig = Math.floor(+isPalindrome / 1000) % 10;
+let fifthPalDig = Math.floor(+isPalindrome /10000);
+let truePalindrome = `${firstPalDig}${secondPalDig}${thirdPalDig}${fourthPalDig}${fifthPalDig}`;
+if(+isPalindrome === (+truePalindrome)){
+    alert(`${isPalindrome} is a Palindrome`);
+}else if(+isPalindrome !== (+truePalindrome)){
+    alert(`${isPalindrome} is not a Palindrome`);
+}
+
+// 2
+const purchaseAmount = +prompt('Enter your purchase amount');
+let withDiscount = 0;
+if(purchaseAmount >= 200 && purchaseAmount < 300){
+    withDiscount = purchaseAmount - (purchaseAmount * 0.03);
+    alert(withDiscount.toFixed(2));
+}else if(purchaseAmount >= 300 && purchaseAmount < 500){
+    withDiscount = purchaseAmount - (purchaseAmount * 0.05);
+    alert(withDiscount.toFixed(2));
+}else if(purchaseAmount >= 500){
+    withDiscount = purchaseAmount - (purchaseAmount * 0.07);
+    alert(withDiscount.toFixed(2));
+}else{
+    alert(purchaseAmount);
+}
