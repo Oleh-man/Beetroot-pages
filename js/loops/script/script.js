@@ -117,3 +117,38 @@ if(purchaseAmount >= 200 && purchaseAmount < 300){
 }else{
     alert(purchaseAmount);
 }
+
+// 3
+let positives = 0;
+let negatives = 0;
+let zeros = 0;
+let odds = 0;
+let evens = 0;
+let numString = '';
+for(let i = 0; i < 10; i++) {
+    let num = +prompt('Enter a number');
+    if(num > 0){
+        positives++;
+    }
+    if(num < 0){
+        negatives++;
+    }
+    if(num === 0){
+        zeros++;
+    }
+    if(num % 2 === 0){
+        evens++;
+    }
+    if(num % 2 != 0){
+        odds++;
+    }
+    numString += num + '; ';
+}
+alert(
+    `Your input is "${numString}":
+    ${positives} positive numbers
+    ${negatives} negative numbers
+    ${zeros} zeros
+    ${evens} even numbers
+    ${odds} odd numbers`
+);
