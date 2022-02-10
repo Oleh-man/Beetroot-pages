@@ -152,3 +152,32 @@ alert(
     ${evens} even numbers
     ${odds} odd numbers`
 );
+
+// 4
+let day = 'Monday. Want to see the next day?';
+while(day !== ''){
+    switch(day) {
+        case 'Monday. Want to see the next day?':
+            alert(day)
+            day = 'Tuesday. Want to see the next day?';
+        case 'Tuesday. Want to see the next day?':
+            alert(day)
+            day = 'Wednesday. Want to see the next day?';
+        case 'Wednesday. Want to see the next day?':
+            alert(day)
+            day = 'Thursday. Want to see the next day?';
+        case 'Thursday. Want to see the next day?':
+            alert(day)
+            day = 'Friday. Want to see the next day?';
+        case 'Friday. Want to see the next day?':
+            alert(day)
+            day = 'Saturday. Want to see the next day?';
+        case 'Saturday. Want to see the next day?':
+            alert(day)
+            day = 'Sunday. Want to see the next day?';
+        case 'Sunday. Want to see the next day?':
+            alert(day)
+            day = 'Monday. Want to see the next day?';
+    }   
+}
+
