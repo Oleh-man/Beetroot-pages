@@ -17,52 +17,56 @@ const CAR = {
 
 CAR.carinfo = () => {
     for (let key in CAR) {
-        console.log(`${key}: ${CAR[key]}`);
+        return `${key}: ${CAR[key]}`;
     };
-    // console.log(`${key}: ${CAR[key]}`);
 }
 
-// 2 ADD DEIVER
-CAR.addDriver = (driverName) => CAR.drivers.push(driverName);
+// 1.2 ADD DEIVER
+CAR.addDriver = (driverName) => {
+    CAR.drivers.push(driverName);
+    return `Driver ${driverName} is added`;
+}
 
 
-// 3 CAR FUELING 
+// 1.3 CAR FUELING 
 CAR.currentFuel = 0;
 CAR.refuel = (liters) => {
     if(CAR.currentFuel < 60){
         CAR.currentFuel += liters;
-    }else {
-        console.log('Your tank is already full');
-    }
-    if(CAR.currentFuel >= 60){
+        return `You just refueled your car for ${CAR.currentFuel} liters` ;
+    }else if(CAR.currentFuel >= 60){
         CAR.currentFuel = 60;
-        console.log('Your tank is full');
+        return console.log('Your tank is full');
     } 
+    else {
+        return console.log('Your tank is already full');
+    }
 };
 
-// 4 
-CAR.tripTime = (distance) => {
-    let totalTime = distance / CAR.midSpeed;
-    let calcTime = totalTime;
-    let newTime = 0;
-    for(let i = calcTime; calcTime > 0; i--){
-        if(calcTime % 4 !== 0){
-            newTime += 1;
-        }
+// 1.4 
+
+CAR.tripTime = (distance, driverName) => {
+    // CALCULATES TIME
+    let totalTime = Math.floor(distance / CAR.midSpeed);
+    let hourStep = 4;
+    let addHour = 0;
+    while((totalTime - hourStep) > 0){
+        addHour++;
+        hourStep += 4;
     }
-    console.log(totalTime)
+
+    let tripfuel = CAR.tank * CAR.fuelConsumption;
+
+    if(CAR.drivers.includes(driverName) && distance < tripfuel){
+        return `Have a nice trip ${driverName}, it takes you about ${totalTime + addHour} hours`;
+    }else if(CAR.drivers.includes(driverName) && distance >= tripfuel){
+        return `${driverName}, its a log distance, refuel yuor car on the road`;
+    
+    }else{
+        return `Get out from a car or i'll call the pollice`
+    }
+        
+
+
+
 }
-
-
-// medium
-
-// 1
-let hours;
-let minutes;
-let seconds
-const CLOCK = {
-    hours: hours,
-    minutes: minutes,
-    seconds: seconds
-}
-
