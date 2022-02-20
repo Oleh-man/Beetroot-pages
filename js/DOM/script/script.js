@@ -65,7 +65,7 @@ closeModal.addEventListener('click', function(){
 });
 
 // MAX
-let lightBtn = document.getElementById("trafic-btn");
+let lightBtn = document.getElementById("traffic-btn");
 let redLight = document.getElementById('red');
 let yellowLight = document.getElementById('yellow');
 let greenLight = document.getElementById('green');
@@ -75,17 +75,18 @@ let clearLights = () => {
     yellowLight.style.backgroundColor = 'gray';
     greenLight.style.backgroundColor = 'gray';
 }
+redLight.style.backgroundColor = 'red';
 
 lightBtn.addEventListener('click', event => {
-    if(redLight.style.backgroundColor = 'gray'){
-        clearLights();
-        redLight.style.backgroundColor = 'red';
-    }else if(yellowLight.style.backgroundColor = 'gray'){
+    if(redLight.style.backgroundColor == 'red'){
         clearLights();
         yellowLight.style.backgroundColor = 'yellow';
-    }else if(greenLight.style.backgroundColor = 'gray'){
+    }else if(yellowLight.style.backgroundColor == 'yellow'){
         clearLights();
         greenLight.style.backgroundColor = 'green';
+    }else if(greenLight.style.backgroundColor = 'green'){
+        clearLights();
+        redLight.style.backgroundColor = 'red';
     }
 });
 
