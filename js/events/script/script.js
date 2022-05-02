@@ -7,7 +7,7 @@ const input = document.getElementById('input');
 body.addEventListener('keydown', function (event) {
     if (event.code == 'KeyE' && (event.ctrlKey || event.metaKey)) {
         event.preventDefault();
-        text.style.display = 'none'
+        text.style.display = 'none';
         input.style.display = 'block';
         input.focus();      //autofocus
         input.textContent = text.textContent;
@@ -20,19 +20,28 @@ body.addEventListener('keydown', function (event) {
     }
 });
 
+
+//2
 const block = document.getElementById('resizeBlock');
 const mover = document.getElementById('clickArea');
 
-let blockWidht = block.clientWidth;
-let blockHeight = block.clientHeight;
-
-
-mover.addEventListener('mousedown', (e) => {
+mover.addEventListener('mousedown', clickOnMover = (e) => {
+    e.preventDefault();
     let currPosDwnX = e.clientX;
     let currPosDwnY = e.clientY;
-    
-    
-    console.dir(typeof(currPosDwnY))
-    console.log(blockHeight, blockWidht)
 
-})
+    const rect = block.getBoundingClientRect();
+    
+    window.addEventListener('mousemove', moveCursor = (e) => {
+        let newX = e.clientX - currPosDwnX;
+        let newY = e.clientY - currPosDwnY;
+        
+        block.style.width = `${rect.width + newX}px`;
+        block.style.height = `${rect.height + newY}px`;
+    });
+        
+    window.addEventListener('mouseup', mouseup = () => {
+    window.removeEventListener('mousemove', moveCursor);
+    window.removeEventListener('mouseup', mouseup);
+    });
+});
