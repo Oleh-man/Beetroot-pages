@@ -18,6 +18,8 @@ function App() {
 
 // FOR NOTEBOOCK
 
+
+// cd burger
 // npm install
 // npm start
 
