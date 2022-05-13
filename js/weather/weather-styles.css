@@ -132,3 +132,7 @@ main:hover li{
 ul li:hover {
     opacity: 1;
 }
+
+.temp {
+    cursor: pointer;
+}
