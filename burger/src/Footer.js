@@ -1,11 +1,8 @@
-// import React from 'react';
-
+import Navigation from "./Navigation";
 function Footer() {
     return (
         <>
-            <h3>Hello I am footer</h3>
-            <div>Footer</div>
-
+            <Navigation />
         </>
     )
 }
