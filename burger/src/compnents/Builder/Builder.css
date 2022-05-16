@@ -1,0 +1,13 @@
+.builder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+.builder>button {
+    height: 200px;
+}

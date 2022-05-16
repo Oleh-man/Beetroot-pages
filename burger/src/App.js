@@ -1,16 +1,18 @@
-import './App.css';
-import Footer from './Footer';
-import Header from './Header';
-import Main from './Main';
-import './Main.css'
+// STYLES
+import './styles/reset.css'
+
+// JSX
+import Header from "./compnents/Header/Header";
+import Main from "./compnents/Main/Main";
+
+
 
 
 function App() {
   return (
     <div>
-      <Header />
+      <Header></Header>
       <Main />
-      <Footer />
     </div>
   );
 }

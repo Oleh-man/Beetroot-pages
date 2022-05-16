@@ -1,0 +1,13 @@
+.builder__item {
+    margin: 6px 0;
+}
+
+.item--count {
+    margin: 0 5px;
+    color: green;
+};
+
+.builder__item>.item--remove-btn {
+    height: 60px;
+    font-size: 56px;
+}
