@@ -9,5 +9,10 @@
 }
 
 .builder>button {
-    height: 200px;
+    height: 60px;
+}
+
+.total-price {
+    margin-top: 25px;
+    
 }
