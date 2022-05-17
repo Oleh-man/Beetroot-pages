@@ -10,11 +10,14 @@ main.addEventListener('click', function (e) {
     .then((result) => (result.json()))
     .then(data => {
         console.dir(data);
-        getDegrees(data);
-        e.path[1].innerHTML = `${Math.floor(data.main.temp - 272.15)} &degС;`
+        getDegrees(data, e);
+
+        
+        
     });
 });
 
-function getDegrees(data) {
-    
+function getDegrees(data, e) {
+    e.path[1].innerHTML = `${Math.floor(data.main.temp - 272.15)} &degС;`
+    console.log(e);
 }
