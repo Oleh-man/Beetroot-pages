@@ -55,14 +55,14 @@ import './Burger-item.css'
 function BurgerItem(props) {
     return (
         <div className='counter-container' onClick={(e) => {
-            
+            props.cahgeIngrediientQuantity(e)
         }}>
             {props.ingredients.map((ingredient) => (
                 <div key={ingredient.name} className="builder__item">
                     <p className="builder__item--name">{ingredient.name} - <span>{ingredient.price}$</span></p>
-                    <button className="item--remove-btn">-</button>
+                    <button className="item--remove-btn" data-action='remove'>-</button>
                     <span className="item--count">0</span>
-                    <button className="item--add-btn">+</button>
+                    <button className="item--add-btn" data-action='add'>+</button>
                     <p className="count-price">$</p>
                 </div>
             ))}
