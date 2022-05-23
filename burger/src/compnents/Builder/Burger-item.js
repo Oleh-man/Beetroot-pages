@@ -60,10 +60,9 @@ function BurgerItem(props) {
             {props.ingredients.map((ingredient) => (
                 <div key={ingredient.name} className="builder__item">
                     <p className="builder__item--name">{ingredient.name} - <span>{ingredient.price}$</span></p>
-                    <button className="item--remove-btn" data-action='remove'>-</button>
-                    <span className="item--count">0</span>
-                    <button className="item--add-btn" data-action='add'>+</button>
-                    <p className="count-price">$</p>
+                    <button className="item--remove-btn" data-ingre={ingredient.name} data-action='remove'>-</button>
+                    <span className="item--count">{props.count[ingredient.name]}</span>
+                    <button className="item--add-btn" data-ingre={ingredient.name} data-action='add'>+</button>
                 </div>
             ))}
         </div>
