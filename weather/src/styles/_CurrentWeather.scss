@@ -1,11 +1,36 @@
 .weather-container {
+    height: 200px;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+    @include flex-row;
 
-    & > div {
+    &>div {
         text-align: center;
+        width: 30%;
+    }
+
+    &__main-temp {
+
+        &--big {
+            color: $city-color;
+            font-size: 8vh;
+        }
+        &--small {
+            font-size: 2vh
+        }
+
+    }
+
+    &__info {
+        @include flex-row;
+        &__icons {
+            width: 50%;
+            text-align: end;
+        }
+        
+        &__dem {
+            width: 50%;
+            text-align: left;
+            font-size: 3vh;
+        }
     }
 }
