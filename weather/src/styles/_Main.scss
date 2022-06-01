@@ -15,17 +15,18 @@ h1 {
     
     &__check--btn {
         cursor: pointer;
+        // border: 1px solid rgb(226, 226, 226);
         border: none;
         outline: none;
         color: $city-color;
-        // background-color: $city-color;
+        background-color: white;
         border-radius: 5px;
         font-size: 3vh;
         height: 45px;
         margin-left: 1ch;
-        box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(70,70,70,0.22);
+        box-shadow: -5px -5px 10px rgba(255,255,255,0.5), 5px 5px 10px rgba(70,70,70,0.22);
         &:active {
-            box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+            box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.5), inset 5px 5px 10px rgba(70, 70, 70, 0.12);
         }
     }
 }
