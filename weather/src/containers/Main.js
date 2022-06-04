@@ -1,4 +1,5 @@
 import React from 'react'
+import CityInput from '../components/CityInput';
 import CurrentWeather from '../components/CurrentWeather'
 import SwitchSystem from '../components/SwitchSystem'
 
@@ -71,35 +72,18 @@ class Main extends React.Component {
 
     render() {
 
-        console.log(this.state.weatherData)
 
         return (
             <main className="wrapper">
-                <h1>Weather Checker</h1>
-                <div className='input-container'>
-                    <p className='input-container__question'>
-                        Want to know Weather in
-                        <input
-                            onChange={this.changeInputSize}
-                            className='city-name'
-                            type="text"
-                            placeholder='(your place)'
-                            autoFocus /> ?</p>
-                    <div className='input-container__check'>
-                        <span className='input-container__check--span'>Just</span>
-                        <button
-                            className='input-container__check--btn'
-                            onClick={this.checkWeather}>
-                            Check it</button>
-                    </div>
-                </div>
-                {this.state.weatherData === null && <div className=''>Please enter city name and hit "Check it" button</div>}
-                {<CurrentWeather
+                <CityInput 
+                changeInputSize={this.changeInputSize} 
+                checkWeather={this.checkWeather}/>
+                {this.state.weatherData === null && <div className='wait-city'>Please enter city name and hit "Check it" button</div>}
+                {this.state.weatherData && <CurrentWeather
                     data={this.state.weatherData}
                     ifMetric={this.state.metric}
                     changeSystem={this.changeSystem}
                     toggleSystem={this.toggleSystem} />}
-                {/* {this.state.weatherData && <CurrentWeather data={this.state.weatherData} ifMetric={this.state.metric}/>} */}
                 <SwitchSystem changeTempSystem={this.changeTempSystem} />
             </main>
         )

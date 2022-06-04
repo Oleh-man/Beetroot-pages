@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CurrentWeather = (props) => {
     return (
         <>
@@ -22,6 +24,8 @@ const CurrentWeather = (props) => {
                     </div>
                 </div>
             </div>
+            <Link to='/comparison'><button className="input-container__check--btn">Compare</button></Link>
+            {/* <button>Compare</button> */}
         </>
     );
 };
