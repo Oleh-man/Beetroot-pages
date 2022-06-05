@@ -33,7 +33,7 @@ class Main extends React.Component {
                 break;
 
             default:
-                e.target.style.width = `${e.target.value.length + 1}ch`
+                e.target.style.width = `${e.target.value.length + 1}ch`;
                 break;
         };
     };
@@ -41,7 +41,11 @@ class Main extends React.Component {
     checkWeather = () => {
         if (this.state.city !== '') {
             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=21edd3c2f4e30b2f7d738b8251326cc5&units=metric`)
-                .then(res => res.json())
+                .then((res) => {
+                    if (!res.ok) {
+                        // HA-HA STILL WORKING
+                    } else return res.json();
+                })
                 .then(data => {
                     this.setState((oldState) => {
                         return {
@@ -49,7 +53,8 @@ class Main extends React.Component {
                             weatherData: data
                         };
                     });
-                });
+                })
+                .catch(console.err);
         };
     };
 
@@ -70,24 +75,36 @@ class Main extends React.Component {
         };
     };
 
+    toggleSystemDistance = (dis) => {
+        let changedDis = dis * 3.6;
+        if (this.state.metric === true) {
+            return `${(changedDis).toFixed(2)}km/h`;
+        }else {
+
+            return `${(changedDis * 0.62).toFixed(2)}mi/h`;
+        };
+    };
+
     render() {
 
+        console.log(this.state.city)
 
         return (
             <main className="wrapper">
-                <CityInput 
-                changeInputSize={this.changeInputSize} 
-                checkWeather={this.checkWeather}/>
+                <CityInput
+                    changeInputSize={this.changeInputSize}
+                    checkWeather={this.checkWeather} />
                 {this.state.weatherData === null && <div className='wait-city'>Please enter city name and hit "Check it" button</div>}
                 {this.state.weatherData && <CurrentWeather
                     data={this.state.weatherData}
                     ifMetric={this.state.metric}
-                    changeSystem={this.changeSystem}
+                    toggleSystemDistance={this.toggleSystemDistance}
                     toggleSystem={this.toggleSystem} />}
+                {this.state.weatherData === undefined && <div className='wait-city red-text'>Please enter city name correctly</div>}
                 <SwitchSystem changeTempSystem={this.changeTempSystem} />
             </main>
-        )
-    }
-}
+        );
+    };
+};
 
-export default Main
+export default Main;
